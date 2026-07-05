@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全球藝術駐村資料庫</title>
+<title>駐村小火把資料庫</title>
 <style>
   :root{
     --bg:#f6f4ef; --card:#ffffff; --ink:#22211e; --sub:#6b675e;
@@ -16,9 +16,17 @@
   header{padding:34px 20px 10px;max-width:1180px;margin:0 auto}
   h1{margin:0;font-size:26px;letter-spacing:1px}
   .sub{color:var(--sub);font-size:13.5px;margin-top:6px}
-  .stats{display:flex;gap:18px;margin-top:14px;flex-wrap:wrap}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 16px;font-size:13px;color:var(--sub)}
-  .stat b{color:var(--ink);font-size:17px;margin-right:4px}
+  .sources{margin-top:16px;border:1px solid var(--line);border-radius:10px;background:var(--card);max-width:520px}
+  .sources summary{cursor:pointer;padding:10px 16px;font-size:13.5px;color:var(--ink);list-style:none;display:flex;align-items:center;justify-content:space-between}
+  .sources summary::-webkit-details-marker{display:none}
+  .sources summary::after{content:"▾";color:var(--sub);font-size:12px}
+  .sources[open] summary::after{content:"▴"}
+  .sources ul{margin:0;padding:0 16px 12px 34px;font-size:13px;columns:2;column-gap:20px}
+  .sources li{margin:3px 0;break-inside:avoid}
+  .sources a{color:var(--accent);text-decoration:none}
+  .sources a:hover{text-decoration:underline}
+  .contact{margin-top:12px;font-size:13px;color:var(--sub)}
+  .contact a{color:var(--accent)}
   .wrap{max-width:1180px;margin:0 auto;padding:0 20px 60px}
 
   .toolbar{position:sticky;top:0;background:var(--bg);padding:14px 0 10px;z-index:5;border-bottom:1px solid var(--line)}
@@ -55,19 +63,39 @@
   .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
   .links a:hover{border-bottom-color:var(--accent)}
   .empty{text-align:center;color:var(--sub);padding:60px 0;font-size:14px}
-
-  footer{max-width:1180px;margin:0 auto;padding:30px 20px 50px;border-top:1px solid var(--line);color:var(--sub);font-size:13px}
-  footer h2{font-size:14.5px;color:var(--ink)}
-  footer a{color:var(--accent)}
-  footer ul{padding-left:18px}
-  @media (max-width:640px){ .grid{grid-template-columns:1fr} }
+  .more-wrap{text-align:center;margin-top:22px}
+  button.more{font:inherit;font-size:14px;padding:9px 22px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);cursor:pointer}
+  button.more:hover{border-color:var(--accent);color:var(--accent)}
+  @media (max-width:640px){ .grid{grid-template-columns:1fr} .sources ul{columns:1} }
 </style>
 </head>
 <body>
 <header>
-  <h1>全球藝術駐村資料庫</h1>
-  <div class="sub">徵件月份為常態週期整理，每年會變動，申請前以各官網為準。</div>
-  <div class="stats" id="stats"></div>
+  <h1>駐村小火把資料庫</h1>
+  <div class="sub">資料台灣時間週一早上 08:00 (UTC+8) 更新，詳細申請資訊請以各官網為準。</div>
+  <details class="sources">
+    <summary>資料來源</summary>
+    <ul>
+      <li><a href="https://artres.moc.gov.tw" target="_blank">文化部藝術進駐網</a></li>
+      <li><a href="https://artemperor.tw" target="_blank">非池中藝術網</a></li>
+      <li><a href="https://stupin.org" target="_blank">STUPIN</a></li>
+      <li><a href="https://air-j.info/en/program/" target="_blank">AIR_J</a></li>
+      <li><a href="https://resartis.org/open-calls/" target="_blank">Res Artis</a></li>
+      <li><a href="https://www.transartists.org" target="_blank">TransArtists</a></li>
+      <li><a href="https://artistcommunities.org/directory/open-calls" target="_blank">Artist Communities Alliance</a></li>
+      <li><a href="https://www.artconnect.com/" target="_blank">ArtConnect</a></li>
+      <li><a href="https://www.e-flux.com/announcements" target="_blank">e-flux announcements</a></li>
+      <li><a href="https://www.zippyframes.com" target="_blank">Zippy Frames</a></li>
+      <li><a href="https://on-the-move.org/news" target="_blank">On the Move</a></li>
+      <li><a href="https://www.janvaneyck.nl/residency/" target="_blank">Jan van Eyck Academie</a></li>
+      <li><a href="https://www.theapro.kr" target="_blank">theApro</a></li>
+      <li><a href="https://www.nyfa.org" target="_blank">NYFA</a></li>
+      <li><a href="https://www.threads.com/@opencallfinder" target="_blank">@opencallfinder（Threads）</a></li>
+      <li><a href="https://www.instagram.com/opencallforartists_" target="_blank">@opencallforartists_（Instagram）</a></li>
+      <li><a href="https://www.reviewedbyartists.com" target="_blank">Reviewed by Artists</a></li>
+    </ul>
+  </details>
+  <div class="contact">若有任何調整與建議，請寄信至 <a href="mailto:chinghsiang.yu26@gmail.com">chinghsiang.yu26@gmail.com</a></div>
 </header>
 
 <div class="wrap">
@@ -94,31 +122,8 @@
 
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none">沒有符合條件的駐村，試著放寬條件。</div>
+  <div class="more-wrap"><button class="more" id="more" style="display:none">顯示更多</button></div>
 </div>
-
-<footer>
-  <h2>資料來源</h2>
-  <ul>
-    <li><a href="https://artres.moc.gov.tw" target="_blank">文化部藝術進駐網</a></li>
-    <li><a href="https://artemperor.tw" target="_blank">非池中藝術網</a></li>
-    <li><a href="https://stupin.org" target="_blank">STUPIN</a></li>
-    <li><a href="https://air-j.info/en/program/" target="_blank">AIR_J</a></li>
-    <li><a href="https://resartis.org/open-calls/" target="_blank">Res Artis</a></li>
-    <li><a href="https://www.transartists.org" target="_blank">TransArtists</a></li>
-    <li><a href="https://artistcommunities.org/directory/open-calls" target="_blank">Artist Communities Alliance</a></li>
-    <li><a href="https://www.artconnect.com/" target="_blank">ArtConnect</a></li>
-    <li><a href="https://www.e-flux.com/announcements" target="_blank">e-flux announcements</a></li>
-    <li><a href="https://www.zippyframes.com" target="_blank">Zippy Frames</a></li>
-    <li><a href="https://on-the-move.org/news" target="_blank">On the Move</a></li>
-    <li><a href="https://www.janvaneyck.nl/residency/" target="_blank">Jan van Eyck Academie</a></li>
-    <li><a href="https://www.theapro.kr" target="_blank">theApro</a></li>
-    <li><a href="https://www.nyfa.org" target="_blank">NYFA</a></li>
-    <li><a href="https://www.threads.com/@opencallfinder" target="_blank">@opencallfinder（Threads）</a></li>
-    <li><a href="https://www.instagram.com/opencallforartists_" target="_blank">@opencallforartists_（Instagram）</a></li>
-    <li><a href="https://www.reviewedbyartists.com" target="_blank">Reviewed by Artists</a></li>
-  </ul>
-  <p>資料更新：跑 <code>python3 scripts/update.py</code> 會自動抓取上述來源的最新徵件。詳見 README。</p>
-</footer>
 
 <script src="data/residencies.js"></script>
 <script src="data/opencalls.js"></script>
@@ -135,15 +140,6 @@ regions.forEach(v => $("fRegion").insertAdjacentHTML("beforeend", `<option>${v}<
 discs.forEach(v => $("fDisc").insertAdjacentHTML("beforeend", `<option>${v}</option>`));
 funds.forEach(v => $("fFund").insertAdjacentHTML("beforeend", `<option>${v}</option>`));
 
-// 統計列
-const countries = new Set(D.map(r => r.country)).size;
-const animCount = D.filter(r => r.disciplines.some(d => ANIM_DISC.includes(d))).length;
-$("stats").innerHTML = `
-  <div class="stat"><b>${D.length}</b>個駐村計畫</div>
-  <div class="stat"><b>${countries}</b>個國家</div>
-  <div class="stat"><b>${regions.length}</b>個地區</div>
-  <div class="stat"><b>${animCount}</b>個動畫・影像相關</div>`;
-
 // 最新徵件區塊
 (function(){
   const oc = window.OPENCALLS;
@@ -151,7 +147,6 @@ $("stats").innerHTML = `
   const fmtDate = d => d ? d.replace(/-/g, "/") : null;
   $("opencalls").innerHTML = `
     <h2>最新徵件</h2>
-    <div class="meta">更新於 ${oc.updatedAt}・${oc.source}</div>
     <ul>${oc.items.map(i => {
       const tag = i.src ? `[${i.src}${fmtDate(i.deadline) ? "-" + fmtDate(i.deadline) + "截止" : ""}]` : "";
       return `<li><a href="${i.url}" target="_blank">${tag}${i.title}</a></li>`;
@@ -192,11 +187,24 @@ function card(r){
   </div>`;
 }
 
+const PAGE = 30;
+let filtered = [];   // 目前篩選＋排序後的完整清單
+let shown = PAGE;    // 目前顯示到第幾筆
+
+function render(){
+  $("grid").innerHTML = filtered.slice(0, shown).map(card).join("");
+  $("empty").style.display = filtered.length ? "none" : "block";
+  $("more").style.display = filtered.length > shown ? "inline-block" : "none";
+  $("count").textContent = filtered.length
+    ? `顯示 ${Math.min(shown, filtered.length)} / ${filtered.length} 筆・依「距今天最近的徵件月份」排序`
+    : "";
+}
+
 function apply(){
   const q = $("q").value.trim().toLowerCase();
   const fr = $("fRegion").value, fd = $("fDisc").value, ff = $("fFund").value;
   const fm = $("fMonth").value;
-  let list = D.filter(r => {
+  filtered = D.filter(r => {
     if(fr && r.region !== fr) return false;
     if(fd && !r.disciplines.includes(fd)) return false;
     if(ff && r.fundingType !== ff) return false;
@@ -210,12 +218,12 @@ function apply(){
   // 排序：接下來最快截止的月份在前，不定期(0)排後面
   const now = new Date().getMonth() + 1;
   const key = r => r.deadlineMonth === 0 ? 99 : ((r.deadlineMonth - now + 12) % 12);
-  list.sort((a,b) => key(a) - key(b) || a.region.localeCompare(b.region,"zh-Hant"));
-  $("grid").innerHTML = list.map(card).join("");
-  $("empty").style.display = list.length ? "none" : "block";
-  $("count").textContent = `顯示 ${list.length} / ${D.length} 筆・依「距今天最近的徵件月份」排序`;
+  filtered.sort((a,b) => key(a) - key(b) || a.region.localeCompare(b.region,"zh-Hant"));
+  shown = PAGE;   // 每次改條件都回到第一頁
+  render();
 }
 
+$("more").addEventListener("click", () => { shown += PAGE; render(); });
 ["q","fRegion","fDisc","fFund","fMonth"].forEach(id => {
   $(id).addEventListener(id === "q" ? "input" : "change", apply);
 });
