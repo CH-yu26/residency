@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球藝術駐村資料庫</title>
+<style>
+  :root{
+    --bg:#f6f4ef; --card:#ffffff; --ink:#22211e; --sub:#6b675e;
+    --line:#e4e0d6; --accent:#a4551e; --accent-soft:#f3e3d5;
+    --green:#2e6b46; --green-soft:#e2efe6; --blue:#2a5a8c; --blue-soft:#e1ebf4;
+    --gray-soft:#eceae4; --warn:#8c2a2a; --warn-soft:#f4e1e1;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  header{padding:34px 20px 10px;max-width:1180px;margin:0 auto}
+  h1{margin:0;font-size:26px;letter-spacing:1px}
+  .sub{color:var(--sub);font-size:13.5px;margin-top:6px}
+  .stats{display:flex;gap:18px;margin-top:14px;flex-wrap:wrap}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 16px;font-size:13px;color:var(--sub)}
+  .stat b{color:var(--ink);font-size:17px;margin-right:4px}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px 60px}
+
+  .toolbar{position:sticky;top:0;background:var(--bg);padding:14px 0 10px;z-index:5;border-bottom:1px solid var(--line)}
+  .filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  input[type=search],select{font:inherit;font-size:13.5px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+  input[type=search]{min-width:200px;flex:1;max-width:300px}
+  label.chk{font-size:13.5px;color:var(--sub);display:flex;align-items:center;gap:5px;cursor:pointer;user-select:none;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+  label.chk input{accent-color:var(--accent)}
+  .count{font-size:12.5px;color:var(--sub);margin-top:8px}
+  button.reset{font:inherit;font-size:13px;border:none;background:none;color:var(--accent);cursor:pointer;text-decoration:underline;padding:7px 4px}
+
+  .opencalls{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:18px 0 6px}
+  .opencalls h2{margin:0 0 4px;font-size:15.5px}
+  .opencalls .meta{font-size:12px;color:var(--sub);margin-bottom:10px}
+  .opencalls ul{margin:0;padding-left:18px;font-size:13.5px;max-height:220px;overflow-y:auto}
+  .opencalls li{margin:4px 0}
+  .opencalls .dl{color:var(--warn);font-size:12.5px;margin-left:6px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+  .card h3{margin:0;font-size:15.5px;line-height:1.4}
+  .place{font-size:13px;color:var(--sub)}
+  .badges{display:flex;gap:5px;flex-wrap:wrap}
+  .badge{font-size:11.5px;padding:2px 8px;border-radius:99px;background:var(--gray-soft);color:var(--sub)}
+  .badge.fund-full{background:var(--green-soft);color:var(--green)}
+  .badge.fund-stipend{background:var(--blue-soft);color:var(--blue)}
+  .badge.anim{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .badge.est{background:none;border:1px solid var(--line)}
+  .rows{font-size:13px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px}
+  .rows dt{color:var(--sub);white-space:nowrap}
+  .rows dd{margin:0}
+  .note{font-size:12.5px;color:var(--sub);border-top:1px dashed var(--line);padding-top:8px;margin-top:2px}
+  .links{display:flex;gap:12px;margin-top:auto;padding-top:8px;font-size:13px}
+  .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+  .links a:hover{border-bottom-color:var(--accent)}
+  .empty{text-align:center;color:var(--sub);padding:60px 0;font-size:14px}
+
+  footer{max-width:1180px;margin:0 auto;padding:30px 20px 50px;border-top:1px solid var(--line);color:var(--sub);font-size:13px}
+  footer h2{font-size:14.5px;color:var(--ink)}
+  footer a{color:var(--accent)}
+  footer ul{padding-left:18px}
+  @media (max-width:640px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header>
+  <h1>全球藝術駐村資料庫</h1>
+  <div class="sub">徵件月份為常態週期整理，每年會變動，申請前以各官網為準。</div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="wrap">
+  <section class="opencalls" id="opencalls"></section>
+
+  <div class="toolbar">
+    <div class="filters">
+      <input type="search" id="q" placeholder="搜尋名稱、城市、關鍵字…">
+      <select id="fRegion"><option value="">所有地區</option></select>
+      <select id="fDisc"><option value="">所有領域</option></select>
+      <select id="fFund"><option value="">補助形態</option></select>
+      <select id="fMonth">
+        <option value="">全部月份</option>
+        <option value="1">1 月</option><option value="2">2 月</option><option value="3">3 月</option>
+        <option value="4">4 月</option><option value="5">5 月</option><option value="6">6 月</option>
+        <option value="7">7 月</option><option value="8">8 月</option><option value="9">9 月</option>
+        <option value="10">10 月</option><option value="11">11 月</option><option value="12">12 月</option>
+        <option value="0">不定期／常年</option>
+      </select>
+      <button class="reset" id="reset">清除條件</button>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">沒有符合條件的駐村，試著放寬條件。</div>
+</div>
+
+<footer>
+  <h2>資料來源</h2>
+  <ul>
+    <li><a href="https://artres.moc.gov.tw" target="_blank">文化部藝術進駐網</a></li>
+    <li><a href="https://artemperor.tw" target="_blank">非池中藝術網</a></li>
+    <li><a href="https://stupin.org" target="_blank">STUPIN</a></li>
+    <li><a href="https://air-j.info/en/program/" target="_blank">AIR_J</a></li>
+    <li><a href="https://resartis.org/open-calls/" target="_blank">Res Artis</a></li>
+    <li><a href="https://www.transartists.org" target="_blank">TransArtists</a></li>
+    <li><a href="https://artistcommunities.org/directory/open-calls" target="_blank">Artist Communities Alliance</a></li>
+    <li><a href="https://www.artconnect.com/" target="_blank">ArtConnect</a></li>
+    <li><a href="https://www.e-flux.com/announcements" target="_blank">e-flux announcements</a></li>
+    <li><a href="https://www.zippyframes.com" target="_blank">Zippy Frames</a></li>
+    <li><a href="https://on-the-move.org/news" target="_blank">On the Move</a></li>
+    <li><a href="https://www.janvaneyck.nl/residency/" target="_blank">Jan van Eyck Academie</a></li>
+    <li><a href="https://www.theapro.kr" target="_blank">theApro</a></li>
+    <li><a href="https://www.nyfa.org" target="_blank">NYFA</a></li>
+    <li><a href="https://www.threads.com/@opencallfinder" target="_blank">@opencallfinder（Threads）</a></li>
+    <li><a href="https://www.instagram.com/opencallforartists_" target="_blank">@opencallforartists_（Instagram）</a></li>
+    <li><a href="https://www.reviewedbyartists.com" target="_blank">Reviewed by Artists</a></li>
+  </ul>
+  <p>資料更新：跑 <code>python3 scripts/update.py</code> 會自動抓取上述來源的最新徵件。詳見 README。</p>
+</footer>
+
+<script src="data/residencies.js"></script>
+<script src="data/opencalls.js"></script>
+<script>
+const D = window.RESIDENCIES || [];
+const $ = id => document.getElementById(id);
+const ANIM_DISC = ["動畫","影像/電影"];
+
+// 下拉選單選項
+const regions = [...new Set(D.map(r => r.region))];
+const discs   = [...new Set(D.flatMap(r => r.disciplines))].sort((a,b)=>a.localeCompare(b,"zh-Hant"));
+const funds   = [...new Set(D.map(r => r.fundingType))];
+regions.forEach(v => $("fRegion").insertAdjacentHTML("beforeend", `<option>${v}</option>`));
+discs.forEach(v => $("fDisc").insertAdjacentHTML("beforeend", `<option>${v}</option>`));
+funds.forEach(v => $("fFund").insertAdjacentHTML("beforeend", `<option>${v}</option>`));
+
+// 統計列
+const countries = new Set(D.map(r => r.country)).size;
+const animCount = D.filter(r => r.disciplines.some(d => ANIM_DISC.includes(d))).length;
+$("stats").innerHTML = `
+  <div class="stat"><b>${D.length}</b>個駐村計畫</div>
+  <div class="stat"><b>${countries}</b>個國家</div>
+  <div class="stat"><b>${regions.length}</b>個地區</div>
+  <div class="stat"><b>${animCount}</b>個動畫・影像相關</div>`;
+
+// 最新徵件區塊
+(function(){
+  const oc = window.OPENCALLS;
+  if(!oc || !oc.items || !oc.items.length){ $("opencalls").style.display = "none"; return; }
+  const fmtDate = d => d ? d.replace(/-/g, "/") : null;
+  $("opencalls").innerHTML = `
+    <h2>最新徵件</h2>
+    <div class="meta">更新於 ${oc.updatedAt}・${oc.source}</div>
+    <ul>${oc.items.map(i => {
+      const tag = i.src ? `[${i.src}${fmtDate(i.deadline) ? "-" + fmtDate(i.deadline) + "截止" : ""}]` : "";
+      return `<li><a href="${i.url}" target="_blank">${tag}${i.title}</a></li>`;
+    }).join("")}
+    </ul>`;
+})();
+
+function fundClass(t){
+  if(t === "全額補助") return "fund-full";
+  if(t === "提供津貼" || t === "免費參與") return "fund-stipend";
+  return "";
+}
+function esc(s){ return (s||"").replace(/</g,"&lt;"); }
+
+function card(r){
+  const isAnim = r.disciplines.some(d => ANIM_DISC.includes(d));
+  return `<div class="card">
+    <h3>${esc(r.name)}</h3>
+    <div class="place">${esc(r.country)}・${esc(r.city)}｜${esc(r.org)}</div>
+    <div class="badges">
+      ${isAnim ? `<span class="badge anim">動畫・影像</span>` : ""}
+      <span class="badge ${fundClass(r.fundingType)}">${esc(r.fundingType)}</span>
+      ${r.disciplines.map(d => `<span class="badge">${esc(d)}</span>`).join("")}
+      ${r.est ? `<span class="badge est">創立 ${r.est}</span>` : ""}
+    </div>
+    <dl class="rows">
+      <dt>期間</dt><dd>${esc(r.duration)}</dd>
+      <dt>補助</dt><dd>${esc(r.fundingDetail)}</dd>
+      <dt>名額</dt><dd>${esc(r.quota)}</dd>
+      <dt>資格</dt><dd>${esc(r.eligibility || "見官網簡章")}</dd>
+      <dt>徵件</dt><dd>${esc(r.deadlineNote)}</dd>
+      <dt>最近截止</dt><dd>${r.lastDeadline ? r.lastDeadline.replace(/-/g,"/") : "未公告"}</dd>
+    </dl>
+    ${r.note ? `<div class="note">${esc(r.note)}</div>` : ""}
+    <div class="links">
+      ${r.website ? `<a href="${r.website}" target="_blank">官網</a>` : ""}
+    </div>
+  </div>`;
+}
+
+function apply(){
+  const q = $("q").value.trim().toLowerCase();
+  const fr = $("fRegion").value, fd = $("fDisc").value, ff = $("fFund").value;
+  const fm = $("fMonth").value;
+  let list = D.filter(r => {
+    if(fr && r.region !== fr) return false;
+    if(fd && !r.disciplines.includes(fd)) return false;
+    if(ff && r.fundingType !== ff) return false;
+    if(fm !== "" && String(r.deadlineMonth) !== fm) return false;
+    if(q){
+      const hay = [r.name,r.org,r.country,r.city,r.region,r.note,r.fundingDetail,(r.disciplines||[]).join(" ")].join(" ").toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  // 排序：接下來最快截止的月份在前，不定期(0)排後面
+  const now = new Date().getMonth() + 1;
+  const key = r => r.deadlineMonth === 0 ? 99 : ((r.deadlineMonth - now + 12) % 12);
+  list.sort((a,b) => key(a) - key(b) || a.region.localeCompare(b.region,"zh-Hant"));
+  $("grid").innerHTML = list.map(card).join("");
+  $("empty").style.display = list.length ? "none" : "block";
+  $("count").textContent = `顯示 ${list.length} / ${D.length} 筆・依「距今天最近的徵件月份」排序`;
+}
+
+["q","fRegion","fDisc","fFund","fMonth"].forEach(id => {
+  $(id).addEventListener(id === "q" ? "input" : "change", apply);
+});
+$("reset").addEventListener("click", () => {
+  $("q").value = ""; $("fRegion").value = ""; $("fDisc").value = "";
+  $("fFund").value = ""; $("fMonth").value = "";
+  apply();
+});
+apply();
+</script>
+</body>
+</html>

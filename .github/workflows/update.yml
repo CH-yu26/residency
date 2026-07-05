@@ -1,0 +1,26 @@
+# 推上 GitHub 後啟用：每週一自動抓最新徵件並 commit，搭配 GitHub Pages 就是全自動更新的網站
+name: 更新駐村徵件
+on:
+  schedule:
+    - cron: "0 0 * * 1"   # 每週一 UTC 00:00（台灣時間早上 8 點）
+  workflow_dispatch:        # 也可手動觸發
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/update.py
+      - name: Commit 更新
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/opencalls.js
+          git diff --cached --quiet || git commit -m "自動更新徵件資料 $(date +%F)"
+          git push
