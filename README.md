@@ -11,14 +11,18 @@
   ```
   只用 Python 標準函式庫，不用裝套件。腳本會抓十個來源（文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、Artist Communities Alliance、ArtConnect、e-flux、Zippy Frames、Res Artis）寫進 `data/opencalls.js`，重新整理網頁就會看到。規則：
   - 每筆會進詳情頁抓截止日期，標題格式 `[來源-YYYY/MM/DD截止] 名稱`。
-  - 只留「第一次出現在 30 天內」的消息（首見日記在 `data/seen.json`），截止超過 7 天剔除。
+  - 只保留駐村徵件（展覽、競圖、講座自動剔除）。
+  - 只留「第一次出現在 30 天內」的消息（首見日記在 `data/seen.json`），截止超過 7 天剔除；7 天內首見的標 NEW。
   - 跨來源用標題相似度去重，中文來源優先保留。
+  - 徵件比對到現有卡片時，自動更新該卡的「最近截止」；比對不到的寫進 `data/uncarded.md`，GitHub Actions 會開 issue「待補卡片清單」提醒人工補卡。
+  - 每月 1 日另有連結檢查（`linkcheck.py`），官網失效的會開 issue「官網連結失效清單」。
 
 ## 檔案結構
 
 | 檔案 | 內容 |
 |------|------|
 | `index.html` | 網站本體（篩選、搜尋、排序都在這） |
+| `scripts/linkcheck.py` | 每月檢查卡片官網連結是否失效 |
 | `data/residencies.js` | 主資料集：120 筆駐村，人工整理，欄位對齊原 Excel |
 | `data/seen.json` | 每個徵件連結第一次出現的日期（給 30 天過濾用） |
 | `data/opencalls.js` | 最新徵件，由 `scripts/update.py` 自動產生 |

@@ -44,6 +44,7 @@
   .opencalls ul{margin:0;padding-left:18px;font-size:13.5px;max-height:220px;overflow-y:auto}
   .opencalls li{margin:4px 0}
   .opencalls .dl{color:var(--warn);font-size:12.5px;margin-left:6px}
+  .opencalls .new{background:var(--warn);color:#fff;font-size:10.5px;border-radius:99px;padding:1px 7px;margin-right:6px;font-weight:600;vertical-align:1px}
 
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:16px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
@@ -149,7 +150,7 @@ funds.forEach(v => $("fFund").insertAdjacentHTML("beforeend", `<option>${v}</opt
     <h2>最新徵件</h2>
     <ul>${oc.items.map(i => {
       const tag = i.src ? `[${i.src}${fmtDate(i.deadline) ? "-" + fmtDate(i.deadline) + "截止" : ""}]` : "";
-      return `<li><a href="${i.url}" target="_blank">${tag}${i.title}</a></li>`;
+      return `<li>${i.new ? '<span class="new">NEW</span>' : ""}<a href="${i.url}" target="_blank">${tag}${i.title}</a></li>`;
     }).join("")}
     </ul>`;
 })();

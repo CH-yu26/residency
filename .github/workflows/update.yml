@@ -1,4 +1,4 @@
-# 推上 GitHub 後啟用：每週一自動抓最新徵件並 commit，搭配 GitHub Pages 就是全自動更新的網站
+# 每週一自動抓最新徵件並 commit，搭配 GitHub Pages 就是全自動更新的網站
 name: 更新駐村徵件
 on:
   schedule:
@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   update:
@@ -21,6 +22,18 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add data/opencalls.js
+          git add data/opencalls.js data/seen.json data/residencies.js
           git diff --cached --quiet || git commit -m "自動更新徵件資料 $(date +%F)"
           git push
+      - name: 回報未入冊徵件（開/更新 issue）
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s data/uncarded.md ]; then
+            num=$(gh issue list --state open --search "待補卡片清單 in:title" --json number --jq '.[0].number')
+            if [ -n "$num" ]; then
+              gh issue edit "$num" --body-file data/uncarded.md
+            else
+              gh issue create --title "待補卡片清單（每週自動產生）" --body-file data/uncarded.md
+            fi
+          fi

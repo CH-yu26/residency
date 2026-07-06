@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 .DS_Store
+data/uncarded.md
+data/brokenlinks.md

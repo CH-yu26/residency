@@ -1,0 +1,32 @@
+# 每月 1 日檢查卡片官網連結，失效的開 issue 提醒
+name: 檢查官網連結
+on:
+  schedule:
+    - cron: "0 1 1 * *"   # 每月 1 日 UTC 01:00（台灣時間早上 9 點）
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/linkcheck.py
+      - name: 回報失效連結（開/更新 issue）
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s data/brokenlinks.md ]; then
+            num=$(gh issue list --state open --search "官網連結失效 in:title" --json number --jq '.[0].number')
+            if [ -n "$num" ]; then
+              gh issue edit "$num" --body-file data/brokenlinks.md
+            else
+              gh issue create --title "官網連結失效清單（每月自動檢查）" --body-file data/brokenlinks.md
+            fi
+          fi

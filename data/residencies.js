@@ -29,8 +29,8 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域","影像/電影"], duration: "依年度公告", fundingType: "提供津貼",
   fundingDetail: "獨立工作室、免費住宿、每日生活津貼約 NTD 500", quota: "依年度公告",
   eligibility: "不限國籍", lastDeadline: "2026-07-05",
-  deadlineMonth: 7, deadlineNote: "2027 屆 2026/7/5 截止；徵件月份逐年調整", website: "https://pair.khcc.gov.tw", est: 2006,
-  note: "城市與工業地景主題，對複合媒材與錄像友善；2027 年度主題「Beta Port｜未完成的港口」" },
+  deadlineMonth: 7, deadlineNote: "每年 6–8 月線上徵件（2027 屆 2026/7/5 截止）", website: "https://www.pier2air.tw", est: 2015,
+  note: "PAIR 計畫每年接待 25–30 位（徵選＋邀請＋國際交換）；對複合媒材與錄像友善；2027 年度主題「Beta Port｜未完成的港口」" },
 
 { name: "臺東藝穗節 駐村藝術家", org: "臺東縣政府", country: "台灣", city: "臺東", region: "台灣",
   disciplines: ["表演藝術","跨領域"], duration: "60–120 天", fundingType: "提供津貼",
@@ -96,8 +96,8 @@ window.RESIDENCIES = [
 { name: "PARADISE AIR", org: "PARADISE AIR（松戶市）", country: "日本", city: "松戶（千葉）", region: "東亞",
   disciplines: ["視覺藝術","跨領域","音樂/聲音"], duration: "短期數週／長期數月", fundingType: "提供津貼",
   fundingDetail: "長期計畫含滯在補助；短期以住宿支援為主", quota: "依檔期",
-  eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "不定期徵件", website: "https://paradiseair.info", est: 2013, note: "" },
+  eligibility: "見官網簡章", lastDeadline: "2026-07-20",
+  deadlineMonth: 7, deadlineNote: "不定期徵件", website: "https://paradiseair.info", est: 2013, note: "" },
 
 { name: "Shiro Oni Studio", org: "Shiro Oni Studio", country: "日本", city: "藤岡鬼石（群馬）", region: "東亞",
   disciplines: ["視覺藝術"], duration: "1–2 個月", fundingType: "需自費",
@@ -495,7 +495,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術"], duration: "1–2 個月", fundingType: "需自費",
   fundingDetail: "月費制含工作室住宿；結尾有展覽", quota: "每梯約 6 名",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://pada.pt", est: 2018,
+  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://www.padastudios.com", est: 2018,
   note: "工業區環境，年輕社群活躍" },
 
 { name: "Numeroventi", org: "Numeroventi", country: "義大利", city: "佛羅倫斯", region: "歐洲",
@@ -646,8 +646,8 @@ window.RESIDENCIES = [
 { name: "Arquetopia", org: "Arquetopia Foundation", country: "墨西哥", city: "Puebla／Oaxaca（另有秘魯據點）", region: "拉丁美洲",
   disciplines: ["視覺藝術","工藝/版畫","研究/策展"], duration: "3 週–2 個月", fundingType: "需自費",
   fundingDetail: "收費制教學型駐村（含傳統工藝指導）", quota: "常年",
-  eligibility: "不限國籍", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://www.arquetopia.org", est: 2009, note: "" },
+  eligibility: "不限國籍", lastDeadline: "2026-12-31",
+  deadlineMonth: 12, deadlineNote: "常年受理", website: "https://www.arquetopia.org", est: 2009, note: "" },
 
 { name: "Proyecto'ace", org: "Proyecto'ace", country: "阿根廷", city: "布宜諾斯艾利斯", region: "拉丁美洲",
   disciplines: ["視覺藝術","工藝/版畫"], duration: "2–4 週", fundingType: "部分補助",
@@ -791,8 +791,8 @@ window.RESIDENCIES = [
 { name: "藝術游擊：藝術家馬祖駐村", org: "連江縣政府文化處", country: "台灣", city: "馬祖", region: "台灣",
   disciplines: ["視覺藝術","跨領域"], duration: "依年度簡章", fundingType: "提供津貼",
   fundingDetail: "提供駐村補助（依年度簡章）", quota: "依年度",
-  eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "每年徵件（115 年已公告，見文化部藝術進駐網）", website: "https://artres.moc.gov.tw", est: null, note: "" },
+  eligibility: "見官網簡章", lastDeadline: "2026-06-30",
+  deadlineMonth: 6, deadlineNote: "每年徵件（115 年已公告，見文化部藝術進駐網）", website: "https://artres.moc.gov.tw", est: null, note: "" },
 
 { name: "臺灣文學基地作家駐村", org: "國立臺灣文學館", country: "台灣", city: "台北", region: "台灣",
   disciplines: ["文學/寫作"], duration: "約 1 個月", fundingType: "提供津貼",
@@ -1019,7 +1019,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "數週–數月", fundingType: "需自費",
   fundingDetail: "收費制，提供住宿與工作空間", quota: "常年",
   eligibility: "不限國籍", lastDeadline: "2026-12-31",
-  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://residenciacorazon.com", est: 2008,
+  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://residenciacorazon.blogspot.com", est: 2008,
   note: "布宜諾斯艾利斯近郊 La Plata 的藝術家駐村" },
 
 { name: "Art Residency México City", org: "（Res Artis 刊登）", country: "墨西哥", city: "墨西哥城", region: "拉丁美洲",

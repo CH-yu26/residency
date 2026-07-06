@@ -23,6 +23,8 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "opencalls.js"
 SEEN = ROOT / "data" / "seen.json"
+CARDS = ROOT / "data" / "residencies.js"
+UNCARDED_MD = ROOT / "data" / "uncarded.md"   # 給 GitHub Actions 開 issue 用
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"}
 TODAY = datetime.date.today()
@@ -281,11 +283,22 @@ def is_residency(title):
     return bool(RESIDENCY_KW.search(title)) and not NON_RESIDENCY_KW.search(title)
 
 
+# 通用字彙不算相似度，避免「都叫某某駐村計畫」就被誤判成同一個
+LATIN_STOP = {"the", "and", "for", "with", "open", "call", "calls", "art", "arts",
+              "artist", "artists", "artistic", "residency", "residencies", "residence",
+              "resident", "program", "programme", "programs", "project", "studio",
+              "studios", "space", "center", "centre", "international", "creative",
+              "house", "culture", "cultural", "foundation", "new", "air",
+              "2025", "2026", "2027", "summer", "winter", "spring", "autumn", "fall"}
+CJK_STOP = {"駐村", "村計", "計畫", "計劃", "藝術", "術家", "家駐", "進駐", "駐地",
+            "國際", "際藝", "徵件", "公開", "開徵", "徵選", "年度", "公告", "申請",
+            "駐留", "術進", "村徵"}
+
 def tokens(title):
     t = re.sub(r"^\[[^\]]*\]", "", title).lower()
-    latin = set(re.findall(r"[a-z0-9]{3,}", t))
+    latin = set(re.findall(r"[a-z0-9]{3,}", t)) - LATIN_STOP
     cjk = re.sub(r"[^一-鿿]", "", t)
-    grams = {cjk[i:i + 2] for i in range(len(cjk) - 1)}
+    grams = {cjk[i:i + 2] for i in range(len(cjk) - 1)} - CJK_STOP
     return latin | grams
 
 
@@ -306,6 +319,66 @@ def dedupe(items):
     for k in kept:
         k.pop("_sig", None)
     return kept
+
+
+def sync_cards(items):
+    """比對徵件與卡片：
+    - 相似度 >= 0.5 視為同一駐村 → 徵件截止日比卡片新就更新卡片的 lastDeadline / deadlineMonth
+    - 相似度 < 0.35 視為未入冊 → 寫進 uncarded.md 供人工補卡
+    - 介於中間的不動（不確定就不猜）"""
+    src = CARDS.read_text(encoding="utf-8")
+    updated, uncarded = 0, []
+    for it in items:
+        tsig = tokens(it["title"])
+        blocks = list(re.finditer(r'\{ name: "(.+?)",.*?\},', src, re.S))
+        best, best_score = None, 0.0          # 供未入冊判斷（任何重疊都算）
+        strong_best, strong_score = None, 0.0  # 供更新截止日（要夠確定才動卡片）
+        for m in blocks:
+            # 比對範圍含單位與備註，中文標題才能對上英文卡名（如 Arteles 的主題計畫）
+            block_txt = m.group(0)
+            org = re.search(r'org: "(.*?)"', block_txt)
+            note = re.search(r'note: "(.*?)"', block_txt)
+            csig = tokens(" ".join([m.group(1), org.group(1) if org else "", note.group(1) if note else ""]))
+            matched = tsig & csig
+            if not matched:
+                continue
+            score = len(matched) / max(1, min(len(tsig), len(csig)))
+            if score > best_score:
+                best, best_score = m, score
+            # 認定同一駐村（可更新卡片）的兩種情況：
+            # 1) 特徵詞重疊 >=2 且比例 >=0.6
+            # 2) 卡片「名稱」的特徵詞有 8 成以上出現在徵件標題（如 PARADISE AIR、駁二）
+            name_sig = tokens(m.group(1))
+            name_cov = len(tsig & name_sig) / len(name_sig) if name_sig else 0
+            is_strong = (len(matched) >= 2 and score >= 0.6) or name_cov >= 0.8
+            if is_strong and score >= strong_score:
+                strong_best, strong_score = m, score
+        best = strong_best or best
+        strong = strong_best is not None
+        if strong:
+            if not it["deadline"]:
+                continue
+            block = src[best.start():best.end()]
+            cur = re.search(r'lastDeadline: (?:"([0-9-]+)"|null)', block)
+            if cur and (cur.group(1) or "") < it["deadline"]:
+                nb = re.sub(r'lastDeadline: (?:"[0-9-]+"|null)',
+                            f'lastDeadline: "{it["deadline"]}"', block, count=1)
+                nb = re.sub(r'deadlineMonth: \d+',
+                            f'deadlineMonth: {int(it["deadline"][5:7])}', nb, count=1)
+                src = src[:best.start()] + nb + src[best.end():]
+                updated += 1
+        elif best_score < 0.30:
+            uncarded.append(it)
+    CARDS.write_text(src, encoding="utf-8")
+    if uncarded:
+        lines = ["自動比對後，下列徵件可能還沒有對應卡片，需要人工查證補卡。",
+                 "（比對是模糊的，中英文名稱差很多時可能誤列已入冊的，確認後忽略即可。）", ""]
+        for it in uncarded:
+            lines.append(f"- [{it['src']}] [{it['title']}]({it['url']}) 截止：{it['deadline'] or '未知'}")
+        UNCARDED_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    else:
+        UNCARDED_MD.write_text("", encoding="utf-8")
+    print(f"卡片截止日更新 {updated} 筆；未入冊徵件 {len(uncarded)} 筆")
 
 
 def main():
@@ -333,6 +406,8 @@ def main():
             continue
         if it["deadline"] and datetime.date.fromisoformat(it["deadline"]) < grace_cut:
             continue
+        # 首次出現 7 天內標成 NEW
+        it["new"] = (TODAY - datetime.date.fromisoformat(first)).days <= 7
         it["_first"] = basis
         items.append(it)
 
@@ -360,6 +435,7 @@ def main():
         encoding="utf-8",
     )
     print(f"完成：{len(items)} 筆徵件 → {OUT}")
+    sync_cards(items)
 
 
 if __name__ == "__main__":
