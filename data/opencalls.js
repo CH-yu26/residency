@@ -1,61 +1,25 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-07-05",
+  "updatedAt": "2026-07-06",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
-      "src": "文化部藝術進駐網",
-      "title": "2027年駁二藝術特區藝術家進駐計畫公開徵件",
-      "deadline": "2026-07-05",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819dce31a7019df268b988000d"
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Open Call: Sound Artist in Residence Galicia, Spain",
-      "deadline": "2026-07-05",
-      "url": "https://artistcommunities.org/directory/open-calls/open-call-sound-artist-residence-galicia-spain"
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "OPEN CALL: Myoju Residency Fellowship near Kyoto",
-      "deadline": "2026-07-05",
-      "url": "https://artistcommunities.org/directory/open-calls/open-call-myoju-residency-fellowship-near-kyoto"
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Ocean VII Virtual Art Residency",
-      "deadline": "2026-07-05",
-      "url": "https://artistcommunities.org/directory/open-calls/ocean-vii-virtual-art-residency"
+      "src": "Res Artis",
+      "title": "Intensive Collaborative Residency for Cross-Arts Practice Development",
+      "deadline": "2026-07-07",
+      "url": "https://resartis.org/open-call/intensive-collaborative-residency-for-cross-arts-practice-development/"
     },
     {
       "src": "Res Artis",
-      "title": "Mycophilia online mushroom school",
-      "deadline": "2026-07-05",
-      "url": "https://resartis.org/open-call/mycophilia-online-mushroom-school/"
+      "title": "MiSHŌ OPEN CALL: CREATIVE SUMMER STAY 2026",
+      "deadline": "2026-07-08",
+      "url": "https://resartis.org/open-call/misho-open-call-creative-summer-stay-2026/"
     },
     {
       "src": "Res Artis",
-      "title": "Artist Residency, Aug/Sept – Last Minute Discount!",
-      "deadline": "2026-07-05",
-      "url": "https://resartis.org/open-call/artist-residency-aug-sept-last-minute-discount/"
-    },
-    {
-      "src": "Res Artis",
-      "title": "Pottery Farm Residency",
-      "deadline": "2026-07-05",
-      "url": "https://resartis.org/open-call/pottery-farm-residency-9/"
-    },
-    {
-      "src": "Res Artis",
-      "title": "Creation Grant and Artistic Residency on Popular Culture 2026",
-      "deadline": "2026-07-05",
-      "url": "https://resartis.org/open-call/creation-grant-and-artistic-residency-on-popular-culture-2026/"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "恩庫拉第九屆：巴塞隆納與畢爾包策展研究駐村",
-      "deadline": "2026-07-06",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019ef82f69930068"
+      "title": "Greek Island Village Escape",
+      "deadline": "2026-07-09",
+      "url": "https://resartis.org/open-call/greek-island-village-escape/"
     },
     {
       "src": "Artist Communities Alliance",
@@ -136,66 +100,6 @@ window.OPENCALLS = {
       "url": "https://artemperor.tw/tidbits/20113"
     },
     {
-      "src": "文化部藝術進駐網",
-      "title": "2027年芬蘭亞特雷斯創意中心Silence Awareness Existence藝術進駐計畫",
-      "deadline": "2026-07-30",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019eed6e2eed004a"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "Ey!Studio AiR 國際藝術家駐村計畫",
-      "deadline": "2026-07-31",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019efebe2249007b"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "My First Arquetopia Residency駐村計畫",
-      "deadline": "2026-07-31",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819a75f70f019a760c849c0001"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "班夫藝術中心 跨文化音樂駐村計畫 - 聲音編織2027",
-      "deadline": "2026-09-30",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819dce31a7019e3f1da1900060"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "甘塞拉國際藝術中心 2027 集體創作實驗室：行走實踐實驗室",
-      "deadline": "2026-10-03",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019ef842ac8e006b"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "2026年 永晝海濱美術館－Space Moor： 展覽銷售 / 駐港創作 Opencall",
-      "deadline": "2026-12-31",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff80818198faf3a2019908590e4f0008"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "2026年阿根廷柯拉松．心藝村藝術駐村徵件",
-      "deadline": "2026-12-31",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff80818198faf3a201999e78a01200cf"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "KAGANHOTEL 河岸旅館 藝術進駐",
-      "deadline": null,
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff808181896d5b230189b04817ea003d"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "天堂藝術進駐短期駐村計畫",
-      "deadline": null,
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff80818191396c0101933d266590013e"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "V54年青藝術家駐留計劃",
-      "deadline": null,
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819883f7610198e53b84cb003c"
-    },
-    {
       "src": "STUPIN",
       "title": "你進駐我贊助｜AA制-空場2.0進駐計畫",
       "deadline": null,
@@ -268,40 +172,28 @@ window.OPENCALLS = {
       "url": "https://internationalheritage.dutchculture.nl/en"
     },
     {
-      "src": "文化部藝術進駐網",
-      "title": "115年「藝術游擊」藝術家馬祖駐村徵選",
-      "deadline": "2026-06-30",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819dce31a7019e6d287b950088"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "2027臺灣陶藝駐村計畫",
-      "deadline": "2026-06-30",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819dce31a7019e3edd435b005b"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "2026 好地下藝術空間 藝術家進駐徵件",
-      "deadline": "2026-06-30",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019ef34e50390057"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "台北｜寶藏巖國際藝術村「2027 台北藝術進駐徵件」",
-      "deadline": "2026-06-30",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819cd603ad019d71596d5f0065"
-    },
-    {
-      "src": "文化部藝術進駐網",
-      "title": "2026橋仔頭糖廠藝術村 藝術家進駐徵件",
-      "deadline": "2026-06-30",
-      "url": "https://artres.moc.gov.tw/zh/calls/content/ff8081819cd603ad019dbe53880b02bf"
-    },
-    {
       "src": "Artist Communities Alliance",
       "title": "🌿 LAST SPACE • July 2026 nature art residency, Thassos island, Greece 🌿",
       "deadline": "2026-07-04",
       "url": "https://artistcommunities.org/directory/open-calls/last-space-july-2026-nature-art-residency-thassos-island-greece"
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Open Call: Sound Artist in Residence Galicia, Spain",
+      "deadline": "2026-07-05",
+      "url": "https://artistcommunities.org/directory/open-calls/open-call-sound-artist-residence-galicia-spain"
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "OPEN CALL: Myoju Residency Fellowship near Kyoto",
+      "deadline": "2026-07-05",
+      "url": "https://artistcommunities.org/directory/open-calls/open-call-myoju-residency-fellowship-near-kyoto"
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Ocean VII Virtual Art Residency",
+      "deadline": "2026-07-05",
+      "url": "https://artistcommunities.org/directory/open-calls/ocean-vii-virtual-art-residency"
     },
     {
       "src": "ArtConnect",
@@ -314,6 +206,12 @@ window.OPENCALLS = {
       "title": "French Translation Residency 2026–2027（Arles、FR）",
       "deadline": "2026-07-13",
       "url": "https://www.artconnect.com/opportunity/Kar4fPd1XxzBzNzitiiLU"
+    },
+    {
+      "src": "ArtConnect",
+      "title": "EXTENDED POSSIBILITIES - RESIDENCY CALL（Sainte-Foy-lès-Lyon、FR）",
+      "deadline": "2026-07-14",
+      "url": "https://www.artconnect.com/opportunity/HpcQwS0TXwyWW5xQ8vxvL"
     },
     {
       "src": "e-flux",
@@ -341,27 +239,9 @@ window.OPENCALLS = {
     },
     {
       "src": "ArtConnect",
-      "title": "Last Call // On-line Program (July - September 2026)",
-      "deadline": "2026-07-05",
-      "url": "https://www.artconnect.com/opportunity/XUibO8WRIGeggPGNHyrRy"
-    },
-    {
-      "src": "ArtConnect",
-      "title": "Residency Autumn 2026 CENTRE（Palermo、IT）",
-      "deadline": "2026-07-05",
-      "url": "https://www.artconnect.com/opportunity/oh0MZOnnArTjXI7QiFzE2"
-    },
-    {
-      "src": "ArtConnect",
       "title": "Visual Arts and Music Residencies（New York、US）",
       "deadline": "2026-07-13",
       "url": "https://www.artconnect.com/opportunity/sKIZ20lM_NCcbACfKSnxJ"
-    },
-    {
-      "src": "ArtConnect",
-      "title": "Myoju 明珠 “Shining Pearl” Artist Residency（Otsu、JP）",
-      "deadline": "2026-07-05",
-      "url": "https://www.artconnect.com/opportunity/p_Xjkm2dOJaBqEmlaVby3"
     }
   ]
 };
