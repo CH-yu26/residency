@@ -16,7 +16,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "約 2 個月", fundingType: "全額補助",
   fundingDetail: "全額補助", quota: "未公告",
   eligibility: "不限國籍", lastDeadline: "2026-03-31",
-  deadlineMonth: 3, deadlineNote: "每年約 3 月底截止", website: "https://artres.moc.gov.tw", est: null, note: "" },
+  deadlineMonth: 3, deadlineNote: "每年約 3 月底截止", website: "https://www.ntmofa.gov.tw", est: null, note: "" },
 
 { name: "文化部選送文化藝術人才出國駐村", org: "文化部", country: "台灣", city: "選送出國（巴黎西帖、紐約 ISCP 等）", region: "台灣",
   disciplines: ["視覺藝術","表演藝術","文學/寫作","跨領域"], duration: "依駐點 2–6 個月", fundingType: "全額補助",
@@ -36,7 +36,7 @@ window.RESIDENCIES = [
   disciplines: ["表演藝術","跨領域"], duration: "60–120 天", fundingType: "提供津貼",
   fundingDetail: "生活費/創作費每月上限 3.3 萬（最多 4 個月）；境外者另補助機票上限 USD 2,000", quota: "至少 2 人（團）",
   eligibility: "不限國籍，需中文或英文溝通能力", lastDeadline: "2026-03-13",
-  deadlineMonth: 3, deadlineNote: "每年約 3 月截止", website: null, est: null,
+  deadlineMonth: 3, deadlineNote: "每年約 3 月截止", website: "https://culture.taitung.gov.tw", est: null,
   note: "需中文或英文溝通能力；每 30 天辦一場在地交流，另需成果展演。簡章見臺東縣政府文化處" },
 
 { name: "藝駐共創（媒合藝術家駐地創研計畫）", org: "文化部（媒合地方館舍）", country: "台灣", city: "台東等地", region: "台灣",
@@ -792,13 +792,13 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "依年度簡章", fundingType: "提供津貼",
   fundingDetail: "提供駐村補助（依年度簡章）", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-06-30",
-  deadlineMonth: 6, deadlineNote: "每年徵件（115 年已公告，見文化部藝術進駐網）", website: "https://artres.moc.gov.tw", est: null, note: "" },
+  deadlineMonth: 6, deadlineNote: "每年徵件（115 年已公告，見文化部藝術進駐網）", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819dce31a7019e6d287b950088", est: null, note: "" },
 
 { name: "臺灣文學基地作家駐村", org: "國立臺灣文學館", country: "台灣", city: "台北", region: "台灣",
   disciplines: ["文學/寫作"], duration: "約 1 個月", fundingType: "提供津貼",
   fundingDetail: "提供住宿與創作補助（依年度簡章）", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "每年徵件", website: "https://artres.moc.gov.tw", est: 2021, note: "齊東詩舍街區的日式宿舍群" },
+  deadlineMonth: 0, deadlineNote: "每年徵件", website: "https://tlb.nmtl.gov.tw", est: 2021, note: "齊東詩舍街區的日式宿舍群" },
 
 { name: "藝息山海：臺東工藝與國際交流駐村", org: "臺東縣政府文化處", country: "台灣", city: "臺東", region: "台灣",
   disciplines: ["工藝/版畫","視覺藝術","跨領域"], duration: "約 45 天", fundingType: "提供津貼",
@@ -855,20 +855,20 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "依年度簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-06-30",
-  deadlineMonth: 6, deadlineNote: "每年徵件（近年約 6 月截止）", website: "https://artres.moc.gov.tw", est: null,
+  deadlineMonth: 6, deadlineNote: "每年徵件（近年約 6 月截止）", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819cd603ad019dbe53880b02bf", est: null,
   note: "高雄橋頭百年糖廠改造的藝術聚落" },
 
 { name: "橋頭三合院工作室 藝術進駐（無所事氏）", org: "橋頭三合院工作室", country: "台灣", city: "高雄橋頭", region: "台灣",
   disciplines: ["視覺藝術","跨領域"], duration: "依計畫", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章（STUPIN 平台公告）", website: "https://stupin.org", est: null, note: "" },
+  deadlineMonth: 0, deadlineNote: "見簡章（STUPIN 平台公告）", website: "https://stupin.org/stupin-press/2026%e5%b9%b4stupin%e7%84%a1%e6%89%80%e4%ba%8b%e6%b0%8f%e8%97%9d%e8%a1%93%e9%80%b2%e9%a7%90%e5%be%b5%e4%bb%b6%e8%a8%88%e7%95%ab%e5%85%ac%e5%91%8a/", est: null, note: "" },
 
 { name: "空場 Polymer 進駐（AA 制）", org: "空場 Polymer", country: "台灣", city: "台北", region: "台灣",
   disciplines: ["視覺藝術","跨領域"], duration: "依計畫", fundingType: "依計畫而定",
   fundingDetail: "「你進駐我贊助」AA 制模式（詳見簡章）", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章（STUPIN 平台公告）", website: "https://stupin.org", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章（STUPIN 平台公告）", website: "https://stupin.org/stupin-press/aa%e5%88%b6-%e7%a9%ba%e5%a0%b42-0%e9%80%b2%e9%a7%90%e8%a8%88%e7%95%ab/", est: null,
   note: "台北藝術家自營空間" },
 
 // 東亞
@@ -876,21 +876,21 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "依計畫", fundingType: "需自費",
   fundingDetail: "支援滯在製作（詳見簡章）", quota: "依年度",
   eligibility: "不限國籍", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章", website: "https://artres.moc.gov.tw", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章", website: "https://kaganhotel.com", est: null,
   note: "京都青年共享住宅結合藝術家滯在製作" },
 
 { name: "佐渡島國際藝術家駐村（Sado Island）", org: "Sado Island International Art Program", country: "日本", city: "佐渡島（新潟）", region: "東亞",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://air-j.info", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://air-j.info/en/program/sado-island-international-artist-residency/", est: null,
   note: "新潟佐渡島的國際駐村" },
 
 { name: "MOYA Creative Residence", org: "MOYA", country: "日本", city: "日本北部（見官網）", region: "東亞",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://air-j.info", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://air-j.info/en/program/moya-creative-residence-program-2026/", est: null,
   note: "主題為「Retreat North & Create」的北國駐村" },
 
 { name: "Myoju「明珠」藝術家駐村", org: "Myoju Residency", country: "日本", city: "大津（滋賀）", region: "東亞",
@@ -904,7 +904,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "提供歷史建築工作室（詳見簡章）", quota: "依年度",
   eligibility: "青年藝術家（詳見簡章）", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章（文化部藝術進駐網）", website: "https://artres.moc.gov.tw", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章（文化部藝術進駐網）", website: "https://www.hkyaf.com", est: null,
   note: "位於香港二級歷史建築 V54 的青年藝術家駐留" },
 
 // 歐洲
@@ -926,14 +926,14 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術"], duration: "見官網簡章", fundingType: "需自費",
   fundingDetail: "藝術家自營空間駐村（詳見簡章）", quota: "依年度",
   eligibility: "不限國籍", lastDeadline: "2026-07-31",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://artres.moc.gov.tw", est: 2017,
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019efebe2249007b", est: 2017,
   note: "馬德里藝術家自營獨立空間" },
 
 { name: "恩庫拉 ENKURA 策展研究駐村", org: "ENKURA", country: "西班牙", city: "巴塞隆納／畢爾包", region: "歐洲",
   disciplines: ["研究/策展"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 7, deadlineNote: "見簡章（文化部藝術進駐網）", website: "https://artres.moc.gov.tw", est: null,
+  deadlineMonth: 7, deadlineNote: "見簡章（文化部藝術進駐網）", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019ef82f69930068", est: null,
   note: "策展研究導向，第九屆延伸至畢爾包" },
 
 { name: "Arte Studio Ginestrelle", org: "Arte Studio Ginestrelle", country: "義大利", city: "Assisi（阿西西）", region: "歐洲",
@@ -947,26 +947,26 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","文學/寫作","研究/策展"], duration: "數週", fundingType: "需自費",
   fundingDetail: "收費制工作室駐村", quota: "常年",
   eligibility: "不限國籍（作家、策展、攝影、藝術/設計）", lastDeadline: "2026-07-06",
-  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://resartis.org", est: null, note: "" },
+  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://resartis.org/open-call/belgrade-petit-studio-residency-writers-curators-thinker-photographers-artists-designers-18/", est: null, note: "" },
 
 { name: "Writing Residency Arraiolos", org: "（Res Artis 刊登）", country: "葡萄牙", city: "Arraiolos", region: "歐洲",
   disciplines: ["文學/寫作"], duration: "數週", fundingType: "需自費",
   fundingDetail: "寫作 retreat（詳見簡章）", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 0, deadlineNote: "見簡章", website: "https://resartis.org", est: null, note: "" },
+  deadlineMonth: 0, deadlineNote: "見簡章", website: "https://resartis.org/open-call/writing-residency-arraiolos-portugal-2026/", est: null, note: "" },
 
 { name: "ARiR Guiniguada 二月 Retreat", org: "ARiR Guiniguada", country: "西班牙", city: "Gran Canaria（大加那利島）", region: "歐洲",
   disciplines: ["視覺藝術","跨領域"], duration: "數週（2 月 retreat）", fundingType: "需自費",
   fundingDetail: "收費制 retreat（早鳥優惠）", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 0, deadlineNote: "見簡章", website: "https://resartis.org", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章", website: "https://resartis.org/open-call/early-bird-call-for-february-retreat-2027-arir-guiniguada-gran-canaria/", est: null,
   note: "加那利群島的冬季 retreat" },
 
 { name: "Rural Creative Coliving（葡萄牙北部）", org: "（Res Artis 刊登）", country: "葡萄牙", city: "葡萄牙北部", region: "歐洲",
   disciplines: ["視覺藝術","跨領域"], duration: "彈性", fundingType: "需自費",
   fundingDetail: "共居型收費駐村", quota: "常年",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://resartis.org", est: null, note: "" },
+  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://resartis.org/open-call/rural-creative-coliving-in-northern-portugal-year-round-application/", est: null, note: "" },
 
 { name: "La Maison de Beaumont（La maison Ocre）", org: "La Maison de Beaumont", country: "法國", city: "Beaumont-de-Pertuis（普羅旺斯）", region: "歐洲",
   disciplines: ["視覺藝術","文學/寫作","跨領域"], duration: "數週", fundingType: "需自費",
@@ -986,20 +986,20 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "需自費",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-05",
-  deadlineMonth: 7, deadlineNote: "見簡章（ArtConnect 刊登）", website: "https://www.artconnect.com/", est: null, note: "" },
+  deadlineMonth: 7, deadlineNote: "見簡章（ArtConnect 刊登）", website: "https://www.artconnect.com/opportunity/oh0MZOnnArTjXI7QiFzE2", est: null, note: "" },
 
 { name: "文學翻譯駐村（Arles）", org: "CITL／ATLAS（Collège des traducteurs）", country: "法國", city: "Arles", region: "歐洲",
   disciplines: ["文學/寫作"], duration: "1–3 個月", fundingType: "提供津貼",
   fundingDetail: "翻譯者駐村，部分提供津貼（詳見簡章）", quota: "依年度",
   eligibility: "文學翻譯者", lastDeadline: "2026-07-13",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.artconnect.com/", est: null,
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.atlas-citl.org", est: null,
   note: "法國亞爾的文學翻譯駐村" },
 
 { name: "EXTENDED POSSIBILITIES 駐村", org: "（ArtConnect 刊登）", country: "法國", city: "Sainte-Foy-lès-Lyon", region: "歐洲",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-14",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.artconnect.com/", est: null, note: "" },
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.artconnect.com/opportunity/HpcQwS0TXwyWW5xQ8vxvL", est: null, note: "" },
 
 { name: "Sound Artist in Residence（Galicia）", org: "（ACA 刊登）", country: "西班牙", city: "Galicia", region: "歐洲",
   disciplines: ["音樂/聲音","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
@@ -1026,19 +1026,19 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術"], duration: "見官網簡章", fundingType: "需自費",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://resartis.org", est: null, note: "" },
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://resartis.org/open-call/art-residency-available-2026-mexico-city/", est: null, note: "" },
 
 { name: "Fall Residency（Mexico City）", org: "（ArtConnect 刊登）", country: "墨西哥", city: "墨西哥城", region: "拉丁美洲",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-09-04",
-  deadlineMonth: 9, deadlineNote: "見簡章", website: "https://www.artconnect.com/", est: null, note: "" },
+  deadlineMonth: 9, deadlineNote: "見簡章", website: "https://www.artconnect.com/opportunity/V4taCheBq08EFNttGr0TI", est: null, note: "" },
 
 // 北美
 { name: "Visual Arts and Music Residencies（New York）", org: "（ArtConnect 刊登）", country: "美國", city: "紐約", region: "北美",
   disciplines: ["視覺藝術","音樂/聲音"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-13",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.artconnect.com/", est: null, note: "" },
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.artconnect.com/opportunity/sKIZ20lM_NCcbACfKSnxJ", est: null, note: "" },
 ];
 
