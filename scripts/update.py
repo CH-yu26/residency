@@ -268,6 +268,19 @@ def grab_artemperor():
 
 # ── 過濾、去重、輸出 ─────────────────────────
 
+# 判斷是否為「駐村徵件」：要有駐村關鍵字，且不是展覽/競賽/導覽雜訊
+RESIDENCY_KW = re.compile(
+    r"駐村|進駐|駐地|駐留|residen|artist[- ]in[- ]residence|\bair\b|retreat|coliving|studio",
+    re.I)
+NON_RESIDENCY_KW = re.compile(
+    r"個展|聯展|雙個展|開幕|exhibition|competition|競圖|onchain|nft|"
+    r"suggested (artists|countries|cities)",
+    re.I)
+
+def is_residency(title):
+    return bool(RESIDENCY_KW.search(title)) and not NON_RESIDENCY_KW.search(title)
+
+
 def tokens(title):
     t = re.sub(r"^\[[^\]]*\]", "", title).lower()
     latin = set(re.findall(r"[a-z0-9]{3,}", t))
@@ -302,7 +315,7 @@ def main():
     for fn in (grab_moc, grab_artemperor, grab_stupin, grab_airj, grab_transartists,
                grab_aca, grab_artconnect, grab_eflux, grab_zippy, grab_resartis):
         try:
-            got = fn()
+            got = [it for it in fn() if is_residency(it["title"])]
             all_items += got
             print(f"  {fn.__name__}: {len(got)} 筆")
         except Exception as e:

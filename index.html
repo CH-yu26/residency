@@ -54,6 +54,7 @@
   .badge.fund-full{background:var(--green-soft);color:var(--green)}
   .badge.fund-stipend{background:var(--blue-soft);color:var(--blue)}
   .badge.anim{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .badge.open{background:var(--green);color:#fff;font-weight:600}
   .badge.est{background:none;border:1px solid var(--line)}
   .rows{font-size:13px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px}
   .rows dt{color:var(--sub);white-space:nowrap}
@@ -113,6 +114,7 @@
         <option value="10">10 月</option><option value="11">11 月</option><option value="12">12 月</option>
         <option value="0">不定期／常年</option>
       </select>
+      <label class="chk"><input type="checkbox" id="fOpen">徵件中</label>
       <button class="reset" id="reset">清除條件</button>
     </div>
     <div class="count" id="count"></div>
@@ -159,12 +161,22 @@ function fundClass(t){
 }
 function esc(s){ return (s||"").replace(/</g,"&lt;"); }
 
+// 今天日期字串（本地時區）
+const TODAY = (() => { const d = new Date(); const p = n => String(n).padStart(2,"0");
+  return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`; })();
+// 判斷是否徵件中：最近截止日在未來，或常年受理/滾動徵件
+function isOpen(r){
+  if(r.lastDeadline && r.lastDeadline >= TODAY) return true;
+  return /常年|滾動|隨時|全年|rolling/.test((r.deadlineNote||"") + (r.duration||""));
+}
+
 function card(r){
   const isAnim = r.disciplines.some(d => ANIM_DISC.includes(d));
   return `<div class="card">
     <h3>${esc(r.name)}</h3>
     <div class="place">${esc(r.country)}・${esc(r.city)}｜${esc(r.org)}</div>
     <div class="badges">
+      ${isOpen(r) ? `<span class="badge open">徵件中</span>` : ""}
       ${isAnim ? `<span class="badge anim">動畫・影像</span>` : ""}
       <span class="badge ${fundClass(r.fundingType)}">${esc(r.fundingType)}</span>
       ${r.disciplines.map(d => `<span class="badge">${esc(d)}</span>`).join("")}
@@ -201,12 +213,13 @@ function render(){
 function apply(){
   const q = $("q").value.trim().toLowerCase();
   const fr = $("fRegion").value, fd = $("fDisc").value, ff = $("fFund").value;
-  const fm = $("fMonth").value;
+  const fm = $("fMonth").value, fo = $("fOpen").checked;
   filtered = D.filter(r => {
     if(fr && r.region !== fr) return false;
     if(fd && !r.disciplines.includes(fd)) return false;
     if(ff && r.fundingType !== ff) return false;
     if(fm !== "" && String(r.deadlineMonth) !== fm) return false;
+    if(fo && !isOpen(r)) return false;
     if(q){
       const hay = [r.name,r.org,r.country,r.city,r.region,r.note,r.fundingDetail,(r.disciplines||[]).join(" ")].join(" ").toLowerCase();
       if(!hay.includes(q)) return false;
@@ -222,12 +235,12 @@ function apply(){
 }
 
 $("more").addEventListener("click", () => { shown += PAGE; render(); });
-["q","fRegion","fDisc","fFund","fMonth"].forEach(id => {
+["q","fRegion","fDisc","fFund","fMonth","fOpen"].forEach(id => {
   $(id).addEventListener(id === "q" ? "input" : "change", apply);
 });
 $("reset").addEventListener("click", () => {
   $("q").value = ""; $("fRegion").value = ""; $("fDisc").value = "";
-  $("fFund").value = ""; $("fMonth").value = "";
+  $("fFund").value = ""; $("fMonth").value = ""; $("fOpen").checked = false;
   apply();
 });
 apply();
