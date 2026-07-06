@@ -136,7 +136,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "約 4–11 月間（依年度）", fundingType: "未公告",
   fundingDetail: "未公告", quota: "未公告",
   eligibility: "不限國籍", lastDeadline: "2026-02-22",
-  deadlineMonth: 2, deadlineNote: "每年約 1–2 月徵件", website: "https://resartis.org/open-call/horanggasy-creative-studio-international-residency-program-2026/", est: null, note: "" },
+  deadlineMonth: 2, deadlineNote: "每年約 1–2 月徵件", website: "https://www.horang.art", est: null, note: "" },
 
 { name: "國立亞洲文化殿堂 ACC 駐村（ACC_R）", org: "Asia Culture Center", country: "韓國", city: "光州", region: "東亞",
   disciplines: ["跨領域","研究/策展","設計/建築"], duration: "依計畫", fundingType: "提供津貼",
@@ -792,7 +792,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "依年度簡章", fundingType: "提供津貼",
   fundingDetail: "提供駐村補助（依年度簡章）", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-06-30",
-  deadlineMonth: 6, deadlineNote: "每年徵件（115 年已公告，見文化部藝術進駐網）", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819dce31a7019e6d287b950088", est: null, note: "" },
+  deadlineMonth: 6, deadlineNote: "每年徵件（115 年已公告，見文化部藝術進駐網）", website: "https://www.nhclac.gov.tw", est: null, note: "" },
 
 { name: "臺灣文學基地作家駐村", org: "國立臺灣文學館", country: "台灣", city: "台北", region: "台灣",
   disciplines: ["文學/寫作"], duration: "約 1 個月", fundingType: "提供津貼",
@@ -855,7 +855,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "依年度簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-06-30",
-  deadlineMonth: 6, deadlineNote: "每年徵件（近年約 6 月截止）", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819cd603ad019dbe53880b02bf", est: null,
+  deadlineMonth: 6, deadlineNote: "每年徵件（近年約 6 月截止）", website: "https://katartistvillage.wixsite.com/kat1901-tw", est: null,
   note: "高雄橋頭百年糖廠改造的藝術聚落" },
 
 { name: "橋頭三合院工作室 藝術進駐（無所事氏）", org: "橋頭三合院工作室", country: "台灣", city: "高雄橋頭", region: "台灣",
@@ -883,21 +883,21 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://air-j.info/en/program/sado-island-international-artist-residency/", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://2taachi.com", est: null,
   note: "新潟佐渡島的國際駐村" },
 
 { name: "MOYA Creative Residence", org: "MOYA", country: "日本", city: "日本北部（見官網）", region: "東亞",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: null,
-  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://air-j.info/en/program/moya-creative-residence-program-2026/", est: null,
+  deadlineMonth: 0, deadlineNote: "見簡章（AIR_J 公告）", website: "https://www.moya-creativeresidence.org", est: null,
   note: "主題為「Retreat North & Create」的北國駐村" },
 
 { name: "Myoju「明珠」藝術家駐村", org: "Myoju Residency", country: "日本", city: "大津（滋賀）", region: "東亞",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-05",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://artistcommunities.org/directory/open-calls/open-call-myoju-residency-fellowship-near-kyoto", est: null,
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://myoju.com/pages/air", est: null,
   note: "近京都、琵琶湖畔大津的駐村" },
 
 { name: "V54 年青藝術家駐留計劃", org: "香港青年藝術協會（HKYAF）", country: "香港", city: "香港（九龍塘）", region: "東亞",
@@ -926,14 +926,14 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術"], duration: "見官網簡章", fundingType: "需自費",
   fundingDetail: "藝術家自營空間駐村（詳見簡章）", quota: "依年度",
   eligibility: "不限國籍", lastDeadline: "2026-07-31",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019efebe2249007b", est: 2017,
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.eystudioart.com", est: 2017,
   note: "馬德里藝術家自營獨立空間" },
 
 { name: "恩庫拉 ENKURA 策展研究駐村", org: "ENKURA", country: "西班牙", city: "巴塞隆納／畢爾包", region: "歐洲",
   disciplines: ["研究/策展"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 7, deadlineNote: "見簡章（文化部藝術進駐網）", website: "https://artres.moc.gov.tw/zh/calls/content/ff8081819e916f41019ef82f69930068", est: null,
+  deadlineMonth: 7, deadlineNote: "見簡章（文化部藝術進駐網）", website: "https://hangar.org/en/convocatories-3/encura-ix/", est: null,
   note: "策展研究導向，第九屆延伸至畢爾包" },
 
 { name: "Arte Studio Ginestrelle", org: "Arte Studio Ginestrelle", country: "義大利", city: "Assisi（阿西西）", region: "歐洲",
@@ -1005,13 +1005,13 @@ window.RESIDENCIES = [
   disciplines: ["音樂/聲音","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
   fundingDetail: "聲音藝術駐村（詳見簡章）", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-05",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://artistcommunities.org/directory/open-calls/open-call-sound-artist-residence-galicia-spain", est: null, note: "" },
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://ocastroartvillage.com", est: null, note: "" },
 
 { name: "LAST SPACE 自然藝術駐村（Thassos）", org: "（ACA 刊登）", country: "希臘", city: "Thassos 島", region: "歐洲",
   disciplines: ["視覺藝術","跨領域"], duration: "3 週", fundingType: "需自費",
   fundingDetail: "收費制夏季自然藝術 retreat", quota: "依梯次",
   eligibility: "不限國籍", lastDeadline: "2026-07-04",
-  deadlineMonth: 7, deadlineNote: "7 月駐村（2026/7/4 截止）", website: "https://artistcommunities.org/directory/open-calls/last-space-july-2026-nature-art-residency-thassos-island-greece", est: null,
+  deadlineMonth: 7, deadlineNote: "7 月駐村（2026/7/4 截止）", website: "https://www.waterandrocknature.org", est: null,
   note: "希臘 Thassos 島，7/4–7/26 自然藝術駐村" },
 
 // 拉丁美洲
@@ -1026,7 +1026,7 @@ window.RESIDENCIES = [
   disciplines: ["視覺藝術"], duration: "見官網簡章", fundingType: "需自費",
   fundingDetail: "見官網簡章", quota: "依年度",
   eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://resartis.org/open-call/art-residency-available-2026-mexico-city/", est: null, note: "" },
+  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.estudiochapulin.com", est: null, note: "" },
 
 { name: "Fall Residency（Mexico City）", org: "（ArtConnect 刊登）", country: "墨西哥", city: "墨西哥城", region: "拉丁美洲",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
