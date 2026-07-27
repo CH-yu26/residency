@@ -1,69 +1,69 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-07-20",
+  "updatedAt": "2026-07-27",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
-      "src": "Artist Communities Alliance",
-      "title": "Expanded Field — Itinera Arte International Artist Residency Program",
-      "deadline": "2026-07-20",
-      "url": "https://artistcommunities.org/directory/open-calls/expanded-field-itinera-arte-international-artist-residency-program",
+      "src": "Res Artis",
+      "title": "Hosted Artist Residencies on the edge of Wollemi Wilderness, near Sydney, Austra…",
+      "deadline": "2026-07-27",
+      "url": "https://resartis.org/open-call/hosted-artist-residencies-on-the-edge-of-wollemi-wilderness-near-sydney-australia/",
       "new": true
     },
     {
       "src": "Res Artis",
-      "title": "Art Residency in Mexico CITY-FALL 2026",
-      "deadline": "2026-07-20",
-      "url": "https://resartis.org/open-call/art-residency-in-mexico-city-fall-2026/",
+      "title": "Under pressure – Printmaking residency November 2026",
+      "deadline": "2026-07-27",
+      "url": "https://resartis.org/open-call/under-pressure-printmaking-residency-november-2026/",
       "new": true
     },
     {
       "src": "Res Artis",
-      "title": "Autumn Residency 2026 – Palanga",
-      "deadline": "2026-07-20",
-      "url": "https://resartis.org/open-call/autumn-residency-2026-palanga/",
+      "title": "PigPrints: Printmaking Residency in MIlan",
+      "deadline": "2026-07-27",
+      "url": "https://resartis.org/open-call/pigprints-printmaking-residency-in-milan-2/",
       "new": true
     },
     {
       "src": "Res Artis",
-      "title": "Your Writing & Research Residency in Argentina",
-      "deadline": "2026-07-20",
-      "url": "https://resartis.org/open-call/your-writing-research-residency-in-argentina/",
+      "title": "Funded residencies for Artists, writers and researchers Parallel to the Venice B…",
+      "deadline": "2026-07-27",
+      "url": "https://resartis.org/open-call/site-specific-sponsored-residencies-in-venice-for-artists-writers-and-researchers-create-and-present-in-the-heart-of-the-venetian-ghetto/",
       "new": true
     },
     {
       "src": "Res Artis",
-      "title": "ILHABELA ISLAND – BRAZIL Multidisciplinary residence – 2026 & 2027",
-      "deadline": "2026-07-20",
-      "url": "https://resartis.org/open-call/ilhabela-island-brazil-multidisciplinary-residence-2026-2027/",
+      "title": "Hub Feenix Artist Residency 2026-27",
+      "deadline": "2026-07-28",
+      "url": "https://resartis.org/open-call/hub-feenix-artist-residency-2026-27/",
       "new": true
     },
     {
       "src": "Res Artis",
-      "title": "August 09-16 Last min. Partially Funded Residency in the heart of Venice",
-      "deadline": "2026-07-20",
-      "url": "https://resartis.org/open-call/open-call-2026-27-live-create-exhibit-in-venice-fully-partially-sponsored-residencies-special-program/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Open Call residencies LATERA (ITALY) August / September",
-      "deadline": "2026-07-22",
-      "url": "https://resartis.org/open-call/open-call-for-summer-residency-italy/",
+      "title": "Microresidencias August 2026",
+      "deadline": "2026-07-29",
+      "url": "https://resartis.org/open-call/microresidencias-august-2026/",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Collective Micro-Residency for Expanded Photography (Buenos Aires)",
-      "deadline": "2026-07-25",
-      "url": "https://artistcommunities.org/directory/open-calls/collective-micro-residency-expanded-photography-buenos-aires",
+      "title": "Artist in Residency Program - trevelin Chubut - Patagonia Argentina",
+      "deadline": "2026-07-30",
+      "url": "https://artistcommunities.org/directory/open-calls/artist-residency-program-trevelin-chubut-patagonia-argentina",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Aviário Studio Ceramics Furniture Making Residency",
-      "deadline": "2026-07-25",
-      "url": "https://artistcommunities.org/directory/open-calls/aviario-studio-ceramics-furniture-making-residency",
+      "title": "Crosstown Arts: 2027 Residencies",
+      "deadline": "2026-07-31",
+      "url": "https://artistcommunities.org/directory/open-calls/crosstown-arts-2027-residencies",
+      "new": true
+    },
+    {
+      "src": "e-flux",
+      "title": "INHABIT artist-in-residence program",
+      "deadline": null,
+      "url": "https://www.e-flux.com/announcements/6787782/inhabit-artist-in-residence-program",
       "new": true
     },
     {
@@ -81,6 +81,13 @@ window.OPENCALLS = {
       "new": true
     },
     {
+      "src": "Res Artis",
+      "title": "ILHABELA ISLAND – BRAZIL Multidisciplinary residence – 2026 & 2027",
+      "deadline": "2026-07-29",
+      "url": "https://resartis.org/open-call/ilhabela-island-brazil-multidisciplinary-residence-2026-2027/",
+      "new": true
+    },
+    {
       "src": "Artist Communities Alliance",
       "title": "🌿 August 2026 nature art residency, Thassos island, Greece 🌿",
       "deadline": "2026-07-30",
@@ -92,13 +99,6 @@ window.OPENCALLS = {
       "title": "Silence Awareness Existence Thematic residency program in Finland, Winter 2027",
       "deadline": "2026-07-30",
       "url": "https://artistcommunities.org/directory/open-calls/silence-awareness-existence-thematic-residency-program-finland-winter-2027",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Special AIR program for BOOK project (in Trevelin – Chubut – Argentina)",
-      "deadline": "2026-07-30",
-      "url": "https://artistcommunities.org/directory/open-calls/special-air-program-book-project-trevelin-chubut-argentina",
       "new": true
     },
     {
@@ -123,25 +123,32 @@ window.OPENCALLS = {
       "new": true
     },
     {
-      "src": "Res Artis",
-      "title": "Intensive Collaborative Residency for Cross-Arts Practice Development",
-      "deadline": "2026-07-21",
-      "url": "https://resartis.org/open-call/intensive-collaborative-residency-for-cross-arts-practice-development/",
-      "new": false
+      "src": "Artist Communities Alliance",
+      "title": "Collective Micro-Residency for Expanded Photography (Buenos Aires)",
+      "deadline": "2026-07-25",
+      "url": "https://artistcommunities.org/directory/open-calls/collective-micro-residency-expanded-photography-buenos-aires",
+      "new": true
     },
     {
-      "src": "AIR_J",
-      "title": "PARADISE AIR ‐ RePAIR Program The RePAIR Program is for self-funded artists who…",
-      "deadline": "2026-07-20",
-      "url": "https://air-j.info/en/program/paradise-air-%e2%80%90-repair-program/",
-      "new": false
+      "src": "Artist Communities Alliance",
+      "title": "Aviário Studio Ceramics Furniture Making Residency",
+      "deadline": "2026-07-25",
+      "url": "https://artistcommunities.org/directory/open-calls/aviario-studio-ceramics-furniture-making-residency",
+      "new": true
     },
     {
-      "src": "Res Artis",
-      "title": "Rural Creative Coliving in Northern Portugal (year-round application)",
-      "deadline": "2026-07-21",
-      "url": "https://resartis.org/open-call/rural-creative-coliving-in-northern-portugal-year-round-application/",
-      "new": false
+      "src": "ArtConnect",
+      "title": "AVISTAVULCÃO: 2027 Azores Residency（Azores、PT）",
+      "deadline": "2026-07-31",
+      "url": "https://www.artconnect.com/opportunity/dG5uU1qlNsfLuwWQMHXxk",
+      "new": true
+    },
+    {
+      "src": "ArtConnect",
+      "title": "Open Call for LGBTQ+ Artist Residency at nina Idyllwild（Idyllwild-Pine Cove、US）",
+      "deadline": "2026-08-22",
+      "url": "https://www.artconnect.com/opportunity/BsPcMyNbTuohthv2yopAM",
+      "new": true
     },
     {
       "src": "STUPIN",
@@ -176,6 +183,13 @@ window.OPENCALLS = {
       "title": "KAGANHOTEL Artist-in-Residence KAGANHOTELは、京都を拠点とするアーティストやクリエーターの滞在制作を支援するレジデンス拠…",
       "deadline": null,
       "url": "https://air-j.info/en/program/kaganhotel-artist-in-residence/",
+      "new": false
+    },
+    {
+      "src": "AIR_J",
+      "title": "PARADISE AIR ‐ RePAIR Program The RePAIR Program is for self-funded artists who…",
+      "deadline": "2026-07-20",
+      "url": "https://air-j.info/en/program/paradise-air-%e2%80%90-repair-program/",
       "new": false
     }
   ]
