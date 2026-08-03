@@ -1,153 +1,97 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-07-27",
+  "updatedAt": "2026-08-03",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
-      "src": "Res Artis",
-      "title": "Hosted Artist Residencies on the edge of Wollemi Wilderness, near Sydney, Austra…",
-      "deadline": "2026-07-27",
-      "url": "https://resartis.org/open-call/hosted-artist-residencies-on-the-edge-of-wollemi-wilderness-near-sydney-australia/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Under pressure – Printmaking residency November 2026",
-      "deadline": "2026-07-27",
-      "url": "https://resartis.org/open-call/under-pressure-printmaking-residency-november-2026/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "PigPrints: Printmaking Residency in MIlan",
-      "deadline": "2026-07-27",
-      "url": "https://resartis.org/open-call/pigprints-printmaking-residency-in-milan-2/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Funded residencies for Artists, writers and researchers Parallel to the Venice B…",
-      "deadline": "2026-07-27",
-      "url": "https://resartis.org/open-call/site-specific-sponsored-residencies-in-venice-for-artists-writers-and-researchers-create-and-present-in-the-heart-of-the-venetian-ghetto/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Hub Feenix Artist Residency 2026-27",
-      "deadline": "2026-07-28",
-      "url": "https://resartis.org/open-call/hub-feenix-artist-residency-2026-27/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Microresidencias August 2026",
-      "deadline": "2026-07-29",
-      "url": "https://resartis.org/open-call/microresidencias-august-2026/",
+      "src": "Artist Communities Alliance",
+      "title": "AiR 2026 in Portugal",
+      "deadline": "2026-08-05",
+      "url": "https://artistcommunities.org/directory/open-calls/air-2026-portugal",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Artist in Residency Program - trevelin Chubut - Patagonia Argentina",
-      "deadline": "2026-07-30",
-      "url": "https://artistcommunities.org/directory/open-calls/artist-residency-program-trevelin-chubut-patagonia-argentina",
+      "title": "Atlantic Center for the Arts Residency #198 - Featuring Will Cotton and Hannah D…",
+      "deadline": "2026-08-05",
+      "url": "https://artistcommunities.org/directory/open-calls/atlantic-center-arts-residency-198-featuring-will-cotton-and-hannah-drake",
+      "new": true
+    },
+    {
+      "src": "非池中",
+      "title": "【WHAT ELSE IS THERE?】2026 Residency Artist Talk",
+      "deadline": "2026-08-06",
+      "url": "https://artemperor.tw/tidbits/20229",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Crosstown Arts: 2027 Residencies",
-      "deadline": "2026-07-31",
-      "url": "https://artistcommunities.org/directory/open-calls/crosstown-arts-2027-residencies",
+      "title": "Japan 2027 - castle towns and art islands - residency on the road group travel",
+      "deadline": "2026-08-06",
+      "url": "https://artistcommunities.org/directory/open-calls/japan-2027-castle-towns-and-art-islands-residency-road-group-travel",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Aviário Studio Screen Printing Residency",
+      "deadline": "2026-08-10",
+      "url": "https://artistcommunities.org/directory/open-calls/aviario-studio-screen-printing-residency",
+      "new": true
+    },
+    {
+      "src": "AIR_J",
+      "title": "Invitation Program 2027 Spring / YUI-PORT Artist-in-Residence Project (long-term…",
+      "deadline": null,
+      "url": "https://air-j.info/en/program/invitation-program-2027-spring-yui-port-artist-in-residence-project-long-term/",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Call to Artists: Kolaj Institute Solo Residencies",
+      "deadline": "2026-08-02",
+      "url": "https://artistcommunities.org/directory/open-calls/call-artists-kolaj-institute-solo-residencies",
       "new": true
     },
     {
       "src": "e-flux",
-      "title": "INHABIT artist-in-residence program",
+      "title": "SCADnow residential graduate program in Lacoste",
       "deadline": null,
-      "url": "https://www.e-flux.com/announcements/6787782/inhabit-artist-in-residence-program",
+      "url": "https://www.e-flux.com/announcements/6787860/scadnow-residential-graduate-program-in-lacoste",
       "new": true
     },
     {
-      "src": "Artist Communities Alliance",
-      "title": "2026 Call for Residency Applicants: Elizabeth Lane Oliver Center for the Arts",
-      "deadline": "2026-07-27",
-      "url": "https://artistcommunities.org/directory/open-calls/2026-call-residency-applicants-elizabeth-lane-oliver-center-arts",
+      "src": "ArtConnect",
+      "title": "Cluster Illustration Artist-in-Residence（England、GB）",
+      "deadline": "2026-08-09",
+      "url": "https://www.artconnect.com/opportunity/nEmgjoFdxAhY9J0R7qOrQ",
       "new": true
     },
     {
-      "src": "Artist Communities Alliance",
-      "title": "Banff Musicians In Residence 2027",
-      "deadline": "2026-07-29",
-      "url": "https://artistcommunities.org/directory/open-calls/banff-musicians-residence-2027",
+      "src": "ArtConnect",
+      "title": "RURAL RESIDENCY at Wubao Village 五宝村（Changde、CN）",
+      "deadline": "2026-08-10",
+      "url": "https://www.artconnect.com/opportunity/YCdpk2s5GmV9pNc06NYXN",
       "new": true
     },
     {
       "src": "Res Artis",
       "title": "ILHABELA ISLAND – BRAZIL Multidisciplinary residence – 2026 & 2027",
-      "deadline": "2026-07-29",
+      "deadline": "2026-08-03",
       "url": "https://resartis.org/open-call/ilhabela-island-brazil-multidisciplinary-residence-2026-2027/",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "🌿 August 2026 nature art residency, Thassos island, Greece 🌿",
-      "deadline": "2026-07-30",
-      "url": "https://artistcommunities.org/directory/open-calls/august-2026-nature-art-residency-thassos-island-greece",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Silence Awareness Existence Thematic residency program in Finland, Winter 2027",
-      "deadline": "2026-07-30",
-      "url": "https://artistcommunities.org/directory/open-calls/silence-awareness-existence-thematic-residency-program-finland-winter-2027",
-      "new": true
-    },
-    {
-      "src": "AIR_J",
-      "title": "【Kyoto Art Center】Artist In Residence Program 2027 Performing Arts KYOTO ART CEN…",
-      "deadline": null,
-      "url": "https://air-j.info/en/program/%e3%80%90kyoto-art-center%e3%80%91artist-in-residence-program-2027-performing-arts/",
-      "new": true
+      "new": false
     },
     {
       "src": "AIR_J",
       "title": "Center AiR 2026 Center, an artist-run alternative space, invites applications fo…",
       "deadline": null,
       "url": "https://air-j.info/en/program/center-air-2026/",
-      "new": true
-    },
-    {
-      "src": "Zippy Frames",
-      "title": "ANIDOX Lab Residency 2026",
-      "deadline": null,
-      "url": "https://www.zippyframes.com/festivals/next-deadlines/anidox-residency/2026-07-31-23-59",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Collective Micro-Residency for Expanded Photography (Buenos Aires)",
-      "deadline": "2026-07-25",
-      "url": "https://artistcommunities.org/directory/open-calls/collective-micro-residency-expanded-photography-buenos-aires",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Aviário Studio Ceramics Furniture Making Residency",
-      "deadline": "2026-07-25",
-      "url": "https://artistcommunities.org/directory/open-calls/aviario-studio-ceramics-furniture-making-residency",
-      "new": true
+      "new": false
     },
     {
       "src": "ArtConnect",
-      "title": "AVISTAVULCÃO: 2027 Azores Residency（Azores、PT）",
-      "deadline": "2026-07-31",
-      "url": "https://www.artconnect.com/opportunity/dG5uU1qlNsfLuwWQMHXxk",
-      "new": true
-    },
-    {
-      "src": "ArtConnect",
-      "title": "Open Call for LGBTQ+ Artist Residency at nina Idyllwild（Idyllwild-Pine Cove、US）",
-      "deadline": "2026-08-22",
-      "url": "https://www.artconnect.com/opportunity/BsPcMyNbTuohthv2yopAM",
+      "title": "The Jim Henson Foundation Puppetry Residency（Waterford、US）",
+      "deadline": "2026-08-09",
+      "url": "https://www.artconnect.com/opportunity/pKjZK2KV3VpZ1HS1nGt0Q",
       "new": true
     },
     {
@@ -183,13 +127,6 @@ window.OPENCALLS = {
       "title": "KAGANHOTEL Artist-in-Residence KAGANHOTELは、京都を拠点とするアーティストやクリエーターの滞在制作を支援するレジデンス拠…",
       "deadline": null,
       "url": "https://air-j.info/en/program/kaganhotel-artist-in-residence/",
-      "new": false
-    },
-    {
-      "src": "AIR_J",
-      "title": "PARADISE AIR ‐ RePAIR Program The RePAIR Program is for self-funded artists who…",
-      "deadline": "2026-07-20",
-      "url": "https://air-j.info/en/program/paradise-air-%e2%80%90-repair-program/",
       "new": false
     }
   ]
