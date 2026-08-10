@@ -958,8 +958,8 @@ window.RESIDENCIES = [
 { name: "ARiR Guiniguada 二月 Retreat", org: "ARiR Guiniguada", country: "西班牙", city: "Gran Canaria（大加那利島）", region: "歐洲",
   disciplines: ["視覺藝術","跨領域"], duration: "數週（2 月 retreat）", fundingType: "需自費",
   fundingDetail: "收費制 retreat（早鳥優惠）", quota: "依年度",
-  eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 0, deadlineNote: "見簡章", website: "https://resartis.org/open-call/early-bird-call-for-february-retreat-2027-arir-guiniguada-gran-canaria/", est: null,
+  eligibility: "見官網簡章", lastDeadline: "2026-08-10",
+  deadlineMonth: 8, deadlineNote: "見簡章", website: "https://resartis.org/open-call/early-bird-call-for-february-retreat-2027-arir-guiniguada-gran-canaria/", est: null,
   note: "加那利群島的冬季 retreat" },
 
 { name: "Rural Creative Coliving（葡萄牙北部）", org: "（Res Artis 刊登）", country: "葡萄牙", city: "葡萄牙北部", region: "歐洲",
@@ -1025,8 +1025,8 @@ window.RESIDENCIES = [
 { name: "Art Residency México City", org: "（Res Artis 刊登）", country: "墨西哥", city: "墨西哥城", region: "拉丁美洲",
   disciplines: ["視覺藝術"], duration: "見官網簡章", fundingType: "需自費",
   fundingDetail: "見官網簡章", quota: "依年度",
-  eligibility: "見官網簡章", lastDeadline: "2026-07-06",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.estudiochapulin.com", est: null, note: "" },
+  eligibility: "見官網簡章", lastDeadline: "2026-08-10",
+  deadlineMonth: 8, deadlineNote: "見簡章", website: "https://www.estudiochapulin.com", est: null, note: "" },
 
 { name: "Fall Residency（Mexico City）", org: "（ArtConnect 刊登）", country: "墨西哥", city: "墨西哥城", region: "拉丁美洲",
   disciplines: ["視覺藝術","跨領域"], duration: "見官網簡章", fundingType: "依計畫而定",
