@@ -978,8 +978,8 @@ window.RESIDENCIES = [
 { name: "Aviário Studio Cyanotype Residency", org: "Aviário Studio", country: "葡萄牙", city: "Ferreira do Zêzere", region: "歐洲",
   disciplines: ["工藝/版畫","視覺藝術"], duration: "數週", fundingType: "需自費",
   fundingDetail: "收費制，含版畫、網版、藍曬（cyanotype）等設備", quota: "每梯多名",
-  eligibility: "不限國籍", lastDeadline: "2026-07-12",
-  deadlineMonth: 7, deadlineNote: "見簡章", website: "https://www.aviariostudio.eu", est: null,
+  eligibility: "不限國籍", lastDeadline: "2026-08-20",
+  deadlineMonth: 8, deadlineNote: "見簡章", website: "https://www.aviariostudio.eu", est: null,
   note: "改造舊鳥舍的工作室，版畫與類比攝影特化" },
 
 { name: "CENTRE 秋季駐村（Palermo）", org: "CENTRE", country: "義大利", city: "Palermo（西西里）", region: "歐洲",
