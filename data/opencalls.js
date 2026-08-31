@@ -1,132 +1,132 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-08-24",
+  "updatedAt": "2026-08-31",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
       "src": "Artist Communities Alliance",
-      "title": "International artist residency in Greece",
-      "deadline": "2026-08-24",
-      "url": "https://artistcommunities.org/directory/open-calls/international-artist-residency-greece",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "bEam arts international artist residency",
-      "deadline": "2026-08-24",
-      "url": "https://resartis.org/open-call/beam-arts-international-artist-residency/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "SUMMER IN PATAGONIA Long days and starry nights. Printmaking residency",
-      "deadline": "2026-08-24",
-      "url": "https://resartis.org/open-call/summer-in-patagonia-long-days-and-starry-nights-printmaking-residency-2/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Sept 25 Deadline: Vancouver Island Plein Air Workshop",
-      "deadline": "2026-08-25",
-      "url": "https://resartis.org/open-call/vancouver-island-plein-air-workshop-two-spots-left/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Ilhabela Island, Brazil, 2027 MULTIDISCIPLINARY RESIDENCE –",
-      "deadline": "2026-08-25",
-      "url": "https://resartis.org/open-call/2026-2027-multidisciplinary-residence-ilhabela-island-brazil/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "AIR Buinho (Portugal) – New call for 2027",
-      "deadline": "2026-08-25",
-      "url": "https://resartis.org/open-call/air-buinho-portugal-new-call-for-2027/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Greek Island Residency with a City Experience.",
-      "deadline": "2026-08-26",
-      "url": "https://resartis.org/open-call/greek-island-residency-with-a-city-experience/",
+      "title": "Artist in Residency Program (2027)",
+      "deadline": "2026-08-31",
+      "url": "https://artistcommunities.org/directory/open-calls/artist-residency-program-2027",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "James Castle House Artist Residency (2-Month)",
-      "deadline": "2026-08-28",
-      "url": "https://artistcommunities.org/directory/open-calls/james-castle-house-artist-residency-2-month",
+      "title": "Soulangh Cultural Park Artists-in-Residence Program 2027",
+      "deadline": "2026-08-31",
+      "url": "https://artistcommunities.org/directory/open-calls/soulangh-cultural-park-artists-residence-program-2027",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Tsung-Yeh Arts and Cultural Center Artists-in-Residence Program 2027",
+      "deadline": "2026-08-31",
+      "url": "https://artistcommunities.org/directory/open-calls/tsung-yeh-arts-and-cultural-center-artists-residence-program-2027",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Critic-in-Residence (Fall/Winter 2026- Portland, Maine)",
+      "deadline": "2026-08-31",
+      "url": "https://artistcommunities.org/directory/open-calls/critic-residence-fallwinter-2026-portland-maine",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Collaborative Printmaking Residency - Fall/Winter 2026-2027",
+      "deadline": "2026-08-31",
+      "url": "https://artistcommunities.org/directory/open-calls/collaborative-printmaking-residency-fallwinter-2026-2027",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Open Art Studio residency in Carabanchel with accommodation in Central Madrid",
+      "deadline": "2026-08-31",
+      "url": "https://artistcommunities.org/directory/open-calls/open-art-studio-residency-carabanchel-accommodation-central-madrid",
       "new": true
     },
     {
       "src": "Res Artis",
-      "title": "Skyline of Venice Partially Funded Residencies in a cool apartment in the heart…",
-      "deadline": "2026-08-24",
-      "url": "https://resartis.org/open-call/in-the-heart-of-venice-upstairs-a-cool-studio-apartment-downstairs-a-space-to-exhibit-and-sell-32/",
+      "title": "Residencies in Rural Tuscany for Autumn Winter 2026 and beyond",
+      "deadline": "2026-08-31",
+      "url": "https://resartis.org/open-call/autumn-and-winter-residencies-in-rural-tuscany-for-2026/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "OPPORTUNITY FOR ARTISTS – 2026 Fall Residencies – A.I.R. Vallauris",
+      "deadline": "2026-08-31",
+      "url": "https://resartis.org/open-call/opportunity-for-artists-2026-fall-residencies-a-i-r-vallauris/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "CALL FOR ARTISTS 2027 Atelier Tremplin Residencies A.I.R. Vallauris",
+      "deadline": "2026-08-31",
+      "url": "https://resartis.org/open-call/call-for-artists-2027-atelier-tremplin-residencies-a-i-r-vallauris/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "ACENTRICSPACE Residency 2026-2027 Winter Open Call",
+      "deadline": "2026-08-31",
+      "url": "https://resartis.org/open-call/acentricspace-residency-2026-winter-open-call/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "PigPrints: Assisted and Intensive printmaking residencies in Milan",
+      "deadline": "2026-08-31",
+      "url": "https://resartis.org/open-call/pigprints-assisted-and-intensive-printmaking-residencies-in-milan/",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Off Season Cottage Residencies (Fall/ Winter/ Spring)",
-      "deadline": "2026-08-23",
-      "url": "https://artistcommunities.org/directory/open-calls/season-cottage-residencies-fall-winter-spring",
+      "title": "2027 Session One Residencies",
+      "deadline": "2026-09-01",
+      "url": "https://artistcommunities.org/directory/open-calls/2027-session-one-residencies",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Last minute Open Call for Autumn Residency 2026",
-      "deadline": "2026-08-23",
-      "url": "https://artistcommunities.org/directory/open-calls/last-minute-open-call-autumn-residency-2026",
+      "title": "Artist Residency Ceramic Symposium, Meteora 2027",
+      "deadline": "2026-09-01",
+      "url": "https://artistcommunities.org/directory/open-calls/artist-residency-ceramic-symposium-meteora-2027",
       "new": true
     },
     {
-      "src": "ArtConnect",
-      "title": "Vilém Flusser Residency for Artistic Research（Berlin、DE）",
-      "deadline": "2026-08-28",
-      "url": "https://www.artconnect.com/opportunity/e-Q6GCKsMaN4PrXUIwi49",
+      "src": "AIR_J",
+      "title": "【Hyogo】L-AIR Himeji ｜Artist-in-Residence Program｜Call for Artists for 2027 L-AIR…",
+      "deadline": "2026-09-30",
+      "url": "https://air-j.info/en/program/%e3%80%90hyogo%e3%80%91l-air-himeji-%ef%bd%9cartist-in-residence-program%ef%bd%9ccall-for-artists-for-2027/",
       "new": true
     },
     {
-      "src": "ArtConnect",
-      "title": "The \"Dialogue Book\" creative residency（Lucinges、FR）",
+      "src": "Artist Communities Alliance",
+      "title": "2027 Artist in Residence at White Buffalo Land Trust",
       "deadline": "2026-08-30",
-      "url": "https://www.artconnect.com/opportunity/BU2mbMO8K4GLAQ5LnRpxh",
+      "url": "https://artistcommunities.org/directory/open-calls/2027-artist-residence-white-buffalo-land-trust",
       "new": true
     },
     {
       "src": "e-flux",
-      "title": "Residencies: selected artists and open call ",
+      "title": "Edges of Color: food and art residency in Oaxaca",
       "deadline": null,
-      "url": "https://www.e-flux.com/announcements/6787824/residencies-selected-artists-and-open-call",
+      "url": "https://www.e-flux.com/announcements/6788024/edges-of-color-food-and-art-residency-in-oaxaca",
       "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Print Residency - Fall & Winter - Barcelona 2026 - La Maldita Estampa-",
+      "deadline": "2026-08-31",
+      "url": "https://artistcommunities.org/directory/open-calls/print-residency-fall-winter-barcelona-2026-la-maldita-estampa",
+      "new": false
     },
     {
       "src": "e-flux",
       "title": "Visiting Research Curator of UNIDEE residency programs",
       "deadline": null,
       "url": "https://www.e-flux.com/announcements/6787830/visiting-research-curator-of-unidee-residency-programs",
-      "new": true
-    },
-    {
-      "src": "ArtConnect",
-      "title": "transmediale x Arts Council Korea (ARKO) Residency（Berlin、DE）",
-      "deadline": "2026-08-28",
-      "url": "https://www.artconnect.com/opportunity/OwL_JZu2R_U0BBRHYiDS8",
-      "new": true
-    },
-    {
-      "src": "e-flux",
-      "title": "Open call for two artwork production residencies",
-      "deadline": null,
-      "url": "https://www.e-flux.com/announcements/6787831/open-call-for-two-artwork-production-residencies",
-      "new": false
-    },
-    {
-      "src": "AIR_J",
-      "title": "Invitation Program 2027 Spring / YUI-PORT Artist-in-Residence Project (long-term…",
-      "deadline": null,
-      "url": "https://air-j.info/en/program/invitation-program-2027-spring-yui-port-artist-in-residence-project-long-term/",
       "new": false
     },
     {
@@ -134,20 +134,6 @@ window.OPENCALLS = {
       "title": "Open call: teach a design studio",
       "deadline": null,
       "url": "https://www.e-flux.com/announcements/6787881/open-call-teach-a-design-studio",
-      "new": false
-    },
-    {
-      "src": "ArtConnect",
-      "title": "Digital Art Residency in cooperation with Pro Helvetia（Berlin、DE）",
-      "deadline": "2026-08-28",
-      "url": "https://www.artconnect.com/opportunity/Qez0EnQcvycBURbJFI677",
-      "new": true
-    },
-    {
-      "src": "e-flux",
-      "title": "SCADnow residential graduate program in Lacoste",
-      "deadline": null,
-      "url": "https://www.e-flux.com/announcements/6787860/scadnow-residential-graduate-program-in-lacoste",
       "new": false
     }
   ]
