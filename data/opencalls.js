@@ -1,34 +1,41 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-14",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
       "src": "Artist Communities Alliance",
-      "title": "Fully Funded Residency in Savannah, GA: Feb - May 2027",
-      "deadline": "2026-09-07",
-      "url": "https://artistcommunities.org/directory/open-calls/fully-funded-residency-savannah-ga-feb-may-2027",
+      "title": "Hambidge Residency Spring 2027 Session (mid-February through May)",
+      "deadline": "2026-09-15",
+      "url": "https://artistcommunities.org/directory/open-calls/hambidge-residency-spring-2027-session-mid-february-through-may",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Foundation House Artist Residency Program",
-      "deadline": "2026-09-07",
-      "url": "https://artistcommunities.org/directory/open-calls/foundation-house-artist-residency-program",
+      "title": "Elsewhere Studios Artist Residency — Now Booking November 2026 Through April 202…",
+      "deadline": "2026-09-15",
+      "url": "https://artistcommunities.org/directory/open-calls/elsewhere-studios-artist-residency-now-booking-november-2026-through-april",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Aviário Studio Ceramics Figure Sculpting Residency",
-      "deadline": "2026-09-10",
-      "url": "https://artistcommunities.org/directory/open-calls/aviario-studio-ceramics-figure-sculpting-residency",
+      "title": "🍁📣 R.A.R.O. BARCELONA | Fall Residency 2026 📣✨",
+      "deadline": "2026-09-15",
+      "url": "https://artistcommunities.org/directory/open-calls/raro-barcelona-fall-residency-2026",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Artist Residency | Cycle 46 and 47",
-      "deadline": "2026-09-10",
-      "url": "https://artistcommunities.org/directory/open-calls/artist-residency-cycle-46-and-47",
+      "title": "Last Minute Call for October and November at Nes Artist Residency",
+      "deadline": "2026-09-15",
+      "url": "https://artistcommunities.org/directory/open-calls/last-minute-call-october-and-november-nes-artist-residency",
+      "new": true
+    },
+    {
+      "src": "e-flux",
+      "title": "Dialectics of the Dinner Table: course and residency in Shanghai",
+      "deadline": null,
+      "url": "https://www.e-flux.com/announcements/6788025/dialectics-of-the-dinner-table-course-and-residency-in-shanghai",
       "new": true
     },
     {
@@ -60,39 +67,18 @@ window.OPENCALLS = {
       "new": true
     },
     {
-      "src": "Artist Communities Alliance",
-      "title": "Tsung-Yeh Arts and Cultural Center Artists-in-Residence Program 2027",
-      "deadline": "2026-09-10",
-      "url": "https://artistcommunities.org/directory/open-calls/tsung-yeh-arts-and-cultural-center-artists-residence-program-2027",
-      "new": true
-    },
-    {
       "src": "AIR_J",
       "title": "【Hyogo】L-AIR Himeji ｜Artist-in-Residence Program｜Call for Artists for 2027 L-AIR…",
       "deadline": "2026-09-30",
       "url": "https://air-j.info/en/program/%e3%80%90hyogo%e3%80%91l-air-himeji-%ef%bd%9cartist-in-residence-program%ef%bd%9ccall-for-artists-for-2027/",
-      "new": true
+      "new": false
     },
     {
       "src": "e-flux",
       "title": "Edges of Color: food and art residency in Oaxaca",
       "deadline": null,
       "url": "https://www.e-flux.com/announcements/6788024/edges-of-color-food-and-art-residency-in-oaxaca",
-      "new": true
-    },
-    {
-      "src": "ArtConnect",
-      "title": "Residency Fundaziun Nairs（Scuol、CH）",
-      "deadline": "2026-09-11",
-      "url": "https://www.artconnect.com/opportunity/HkYj3KcJdJcshxXEAxEG3",
-      "new": true
-    },
-    {
-      "src": "ArtConnect",
-      "title": "MAD Artist Studios Residency 2027（New York、US）",
-      "deadline": "2026-09-10",
-      "url": "https://www.artconnect.com/opportunity/9d2gVDJuBHHTrAZHkXAR8",
-      "new": true
+      "new": false
     }
   ]
 };
