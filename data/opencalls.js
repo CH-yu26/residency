@@ -1,34 +1,55 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-21",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
       "src": "Artist Communities Alliance",
-      "title": "Hambidge Residency Spring 2027 Session (mid-February through May)",
-      "deadline": "2026-09-15",
-      "url": "https://artistcommunities.org/directory/open-calls/hambidge-residency-spring-2027-session-mid-february-through-may",
+      "title": "Aviário Studio Artist Book Residency - Spring/Summer 2027",
+      "deadline": "2026-09-22",
+      "url": "https://artistcommunities.org/directory/open-calls/aviario-studio-artist-book-residency-springsummer-2027",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Elsewhere Studios Artist Residency — Now Booking November 2026 Through April 202…",
-      "deadline": "2026-09-15",
-      "url": "https://artistcommunities.org/directory/open-calls/elsewhere-studios-artist-residency-now-booking-november-2026-through-april",
+      "title": "Write Over Here: Indigenous Futurism Residency 2027",
+      "deadline": "2026-09-23",
+      "url": "https://artistcommunities.org/directory/open-calls/write-over-here-indigenous-futurism-residency-2027",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "🍁📣 R.A.R.O. BARCELONA | Fall Residency 2026 📣✨",
-      "deadline": "2026-09-15",
-      "url": "https://artistcommunities.org/directory/open-calls/raro-barcelona-fall-residency-2026",
+      "title": "Casasanvito Call – Artist Residency in Marche, Italy – First Open call for 2027!",
+      "deadline": "2026-09-30",
+      "url": "https://artistcommunities.org/directory/open-calls/casasanvito-call-artist-residency-marche-italy-first-open-call-2027",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Last Minute Call for October and November at Nes Artist Residency",
-      "deadline": "2026-09-15",
-      "url": "https://artistcommunities.org/directory/open-calls/last-minute-call-october-and-november-nes-artist-residency",
+      "title": "AUTUMN - Artist in Residency Program - trevelin Chubut - Patagonia Argentina",
+      "deadline": "2026-09-30",
+      "url": "https://artistcommunities.org/directory/open-calls/autumn-artist-residency-program-trevelin-chubut-patagonia-argentina",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Vermont Studio Center Open Call",
+      "deadline": "2026-09-30",
+      "url": "https://artistcommunities.org/directory/open-calls/vermont-studio-center-open-call",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "January-March 2027 Residency",
+      "deadline": "2026-09-30",
+      "url": "https://artistcommunities.org/directory/open-calls/january-march-2027-residency",
+      "new": true
+    },
+    {
+      "src": "AIR_J",
+      "title": "6okken Residency 2027 Terms, Open Call An artist-run residency in a village look…",
+      "deadline": null,
+      "url": "https://air-j.info/en/program/6okken-residency-2027-terms-open-call/",
       "new": true
     },
     {
@@ -39,32 +60,11 @@ window.OPENCALLS = {
       "new": true
     },
     {
-      "src": "Artist Communities Alliance",
-      "title": "Atlantic Center for the Arts Residency #198 - Featuring Hannah Drake",
-      "deadline": "2026-09-14",
-      "url": "https://artistcommunities.org/directory/open-calls/atlantic-center-arts-residency-198-featuring-hannah-drake",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Edward F. Albee Foundation Winter/Spring Residency",
-      "deadline": "2026-09-14",
-      "url": "https://artistcommunities.org/directory/open-calls/edward-f-albee-foundation-winterspring-residency",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Jentel Residency Winter/Spring 2027 Open Call",
-      "deadline": "2026-09-15",
-      "url": "https://artistcommunities.org/directory/open-calls/jentel-residency-winterspring-2027-open-call",
-      "new": true
-    },
-    {
       "src": "AIR_J",
       "title": "The Shigaraki Ceramic Cultural Park (SCCP) Artist-in-Residence Program 2027 The…",
       "deadline": null,
       "url": "https://air-j.info/en/program/the-shigaraki-ceramic-cultural-park-sccp-artist-in-residence-program-2027/",
-      "new": true
+      "new": false
     },
     {
       "src": "AIR_J",
