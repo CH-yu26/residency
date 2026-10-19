@@ -946,8 +946,8 @@ window.RESIDENCIES = [
 { name: "Belgrade PETIT Studio Residency", org: "PETIT Studio", country: "塞爾維亞", city: "貝爾格勒", region: "歐洲",
   disciplines: ["視覺藝術","文學/寫作","研究/策展"], duration: "數週", fundingType: "需自費",
   fundingDetail: "收費制工作室駐村", quota: "常年",
-  eligibility: "不限國籍（作家、策展、攝影、藝術/設計）", lastDeadline: "2026-07-06",
-  deadlineMonth: 0, deadlineNote: "常年受理", website: "https://resartis.org/open-call/belgrade-petit-studio-residency-writers-curators-thinker-photographers-artists-designers-18/", est: null, note: "" },
+  eligibility: "不限國籍（作家、策展、攝影、藝術/設計）", lastDeadline: "2026-10-20",
+  deadlineMonth: 10, deadlineNote: "常年受理", website: "https://resartis.org/open-call/belgrade-petit-studio-residency-writers-curators-thinker-photographers-artists-designers-18/", est: null, note: "" },
 
 { name: "Writing Residency Arraiolos", org: "（Res Artis 刊登）", country: "葡萄牙", city: "Arraiolos", region: "歐洲",
   disciplines: ["文學/寫作"], duration: "數週", fundingType: "需自費",
