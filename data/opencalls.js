@@ -1,13 +1,62 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-02",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
       "src": "Artist Communities Alliance",
-      "title": "December Residency for Artists, Writers, and more in Athens, Greece",
-      "deadline": "2026-10-30",
-      "url": "https://artistcommunities.org/directory/open-calls/december-residency-artists-writers-and-more-athens-greece",
+      "title": "2027 Volland Residencies",
+      "deadline": "2026-11-02",
+      "url": "https://artistcommunities.org/directory/open-calls/2027-volland-residencies",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "Winter Retreat 2026/2027 – ARiR Guiniguada, Gran Canaria",
+      "deadline": "2026-11-02",
+      "url": "https://resartis.org/open-call/winter-retreat-2026-2027-arir-guiniguada-gran-canaria/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "Urban Arts Residency Guadalajara / 2027",
+      "deadline": "2026-11-03",
+      "url": "https://resartis.org/open-call/urban-arts-residency-september-october-2026/",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Trillium Arts: 2027 Individual Artists Residencies",
+      "deadline": "2026-11-04",
+      "url": "https://artistcommunities.org/directory/open-calls/trillium-arts-2027-individual-artists-residencies",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "Aviário Studio Intaglio Printmaking Residency 2027",
+      "deadline": "2026-11-05",
+      "url": "https://resartis.org/open-call/aviario-studio-intaglio-printmaking-residency-2027/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "Verãozão / Summer Residency",
+      "deadline": "2026-11-05",
+      "url": "https://resartis.org/open-call/veraozao-summer-residency/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "Belgrade PETIT Studio Residency WRITERS, CURATORS, THINKER, PHOTOGRAPHERS, ARTIS…",
+      "deadline": "2026-11-06",
+      "url": "https://resartis.org/open-call/belgrade-petit-studio-residency-writers-curators-thinker-photographers-artists-designers-32/",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "July–December 2027 Residencies at the Studios at MASS MoCA",
+      "deadline": "2026-11-01",
+      "url": "https://artistcommunities.org/directory/open-calls/july-december-2027-residencies-studios-mass-moca",
       "new": true
     },
     {
@@ -18,27 +67,6 @@ window.OPENCALLS = {
       "new": true
     },
     {
-      "src": "Artist Communities Alliance",
-      "title": "Invisible Cartographies — Residency for Neurodivergent Artists (Buinho, Portugal…",
-      "deadline": "2026-10-26",
-      "url": "https://artistcommunities.org/directory/open-calls/invisible-cartographies-residency-neurodivergent-artists-buinho-portugal",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Way Beyond - Thematic residency program in Finland 2027",
-      "deadline": "2026-10-29",
-      "url": "https://artistcommunities.org/directory/open-calls/way-beyond-thematic-residency-program-finland-2027",
-      "new": true
-    },
-    {
-      "src": "Artist Communities Alliance",
-      "title": "Escape to Vancouver Island for a winter residency",
-      "deadline": "2026-10-30",
-      "url": "https://artistcommunities.org/directory/open-calls/escape-vancouver-island-winter-residency",
-      "new": true
-    },
-    {
       "src": "AIR_J",
       "title": "SPACE DEPARTMENT Artist-in-Residence Program 2027 SPACE DEPARTMENT is an artist-…",
       "deadline": null,
@@ -46,17 +74,10 @@ window.OPENCALLS = {
       "new": false
     },
     {
-      "src": "Artist Communities Alliance",
-      "title": "Print Residency - Winter - Barcelona 2026 / 2027 - La Maldita Estampa",
-      "deadline": "2026-10-30",
-      "url": "https://artistcommunities.org/directory/open-calls/print-residency-winter-barcelona-2026-2027-la-maldita-estampa",
-      "new": false
-    },
-    {
       "src": "AIR_J",
-      "title": "2026 Artist in Residence KOBE (AiRK) OPEN CALL We are seeking artists who will r…",
+      "title": "MOYA Creative Residence Program 2027 Retreat North & Create - In the midst of Al…",
       "deadline": null,
-      "url": "https://air-j.info/en/program/artist-in-residence-kobe-airk-open-call/",
+      "url": "https://air-j.info/en/program/moya-creative-residence-program-2027/",
       "new": false
     }
   ]
