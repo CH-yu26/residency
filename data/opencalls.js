@@ -1,62 +1,83 @@
 // 由 scripts/update.py 自動產生，勿手動編輯
 window.OPENCALLS = {
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-09",
   "source": "自動抓取：文化部藝術進駐網、非池中、STUPIN、AIR_J、TransArtists、ACA、e-flux、Zippy Frames、Res Artis（僅列近一個月內出現的消息）",
   "items": [
     {
       "src": "Artist Communities Alliance",
-      "title": "2027 Volland Residencies",
-      "deadline": "2026-11-02",
-      "url": "https://artistcommunities.org/directory/open-calls/2027-volland-residencies",
+      "title": "Summer 2027 Byrdcliffe Historic Cottage Residency",
+      "deadline": "2026-11-09",
+      "url": "https://artistcommunities.org/directory/open-calls/summer-2027-byrdcliffe-historic-cottage-residency",
       "new": true
     },
     {
       "src": "Res Artis",
-      "title": "Winter Retreat 2026/2027 – ARiR Guiniguada, Gran Canaria",
-      "deadline": "2026-11-02",
-      "url": "https://resartis.org/open-call/winter-retreat-2026-2027-arir-guiniguada-gran-canaria/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Urban Arts Residency Guadalajara / 2027",
-      "deadline": "2026-11-03",
-      "url": "https://resartis.org/open-call/urban-arts-residency-september-october-2026/",
+      "title": "PIGPRINTS: Printmaking Residency in Milan",
+      "deadline": "2026-11-09",
+      "url": "https://resartis.org/open-call/pigprints-printmaking-residency-in-milan/",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "Trillium Arts: 2027 Individual Artists Residencies",
-      "deadline": "2026-11-04",
-      "url": "https://artistcommunities.org/directory/open-calls/trillium-arts-2027-individual-artists-residencies",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Aviário Studio Intaglio Printmaking Residency 2027",
-      "deadline": "2026-11-05",
-      "url": "https://resartis.org/open-call/aviario-studio-intaglio-printmaking-residency-2027/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Verãozão / Summer Residency",
-      "deadline": "2026-11-05",
-      "url": "https://resartis.org/open-call/veraozao-summer-residency/",
-      "new": true
-    },
-    {
-      "src": "Res Artis",
-      "title": "Belgrade PETIT Studio Residency WRITERS, CURATORS, THINKER, PHOTOGRAPHERS, ARTIS…",
-      "deadline": "2026-11-06",
-      "url": "https://resartis.org/open-call/belgrade-petit-studio-residency-writers-curators-thinker-photographers-artists-designers-32/",
+      "title": "Fuse: Music Residency 2027",
+      "deadline": "2026-11-12",
+      "url": "https://artistcommunities.org/directory/open-calls/fuse-music-residency-2027",
       "new": true
     },
     {
       "src": "Artist Communities Alliance",
-      "title": "July–December 2027 Residencies at the Studios at MASS MoCA",
-      "deadline": "2026-11-01",
-      "url": "https://artistcommunities.org/directory/open-calls/july-december-2027-residencies-studios-mass-moca",
+      "title": "2027 Studio Residency",
+      "deadline": "2026-11-15",
+      "url": "https://artistcommunities.org/directory/open-calls/2027-studio-residency",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Women's Studio Workshop: Artist's Book Residency Grant",
+      "deadline": "2026-11-15",
+      "url": "https://artistcommunities.org/directory/open-calls/womens-studio-workshop-artists-book-residency-grant",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Open Call 2027 Essere Residency",
+      "deadline": "2026-11-15",
+      "url": "https://artistcommunities.org/directory/open-calls/open-call-2027-essere-residency",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "2027 Theodore B. Olson Memorial Fellowship and Residency",
+      "deadline": "2026-11-15",
+      "url": "https://artistcommunities.org/directory/open-calls/2027-theodore-b-olson-memorial-fellowship-and-residency",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Applications Open for Summer 2027 Residency Program",
+      "deadline": "2026-11-16",
+      "url": "https://artistcommunities.org/directory/open-calls/applications-open-summer-2027-residency-program",
+      "new": true
+    },
+    {
+      "src": "Artist Communities Alliance",
+      "title": "Print Residency - Winter & Spring - Barcelona 2027 - La Maldita Estampa",
+      "deadline": "2026-11-16",
+      "url": "https://artistcommunities.org/directory/open-calls/print-residency-winter-spring-barcelona-2027-la-maldita-estampa",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "EXPANDED PHOTOGRAPHY RESEARCH RESIDENCY Japan | 2027–2028",
+      "deadline": "2026-12-30",
+      "url": "https://resartis.org/open-call/expanded-photography-research-residency-japan-2027-2028/",
+      "new": true
+    },
+    {
+      "src": "Res Artis",
+      "title": "INTERNATIONAL PROGRAM IN EXPANDED PHOTOGRAPHY (online) + ART RESIDENCY IN CHINA…",
+      "deadline": "2026-12-30",
+      "url": "https://resartis.org/open-call/international-residency-program-in-expanded-photography/",
       "new": true
     },
     {
@@ -64,7 +85,7 @@ window.OPENCALLS = {
       "title": "ARCUS Research Summer 2027 Short-term Residency Program in Japan Residency locat…",
       "deadline": null,
       "url": "https://air-j.info/en/program/arcus-research-summer-2027/",
-      "new": true
+      "new": false
     },
     {
       "src": "AIR_J",
